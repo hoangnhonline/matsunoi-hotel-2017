@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 28, 2017 at 07:31 PM
+-- Generation Time: Oct 08, 2017 at 04:43 PM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 5.6.30
 
@@ -220,6 +220,36 @@ CREATE TABLE `text_lang` (
   `content` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `full_name` varchar(255) NOT NULL,
+  `display_name` varchar(100) DEFAULT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `role` tinyint(1) NOT NULL,
+  `leader_id` int(11) DEFAULT NULL,
+  `status` tinyint(1) NOT NULL DEFAULT '1',
+  `changed_password` tinyint(1) NOT NULL DEFAULT '0',
+  `remember_token` varchar(255) NOT NULL,
+  `created_user` int(11) NOT NULL,
+  `updated_user` int(11) NOT NULL,
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `full_name`, `display_name`, `email`, `password`, `role`, `leader_id`, `status`, `changed_password`, `remember_token`, `created_user`, `updated_user`, `created_at`, `updated_at`) VALUES
+(1, 'Admin', 'Admin', 'admin@matsunoi.vn', '$2y$10$cuj..B4n2qP1JXrj6ahgs.tAyOlCuPmAycKIMNqf6bOBgD8F626Mu', 3, 1, 1, 0, 'vPbgJkjkPHkkBwqhua6t9cHKKH18rm1nS2Ri1Myvlgbgle2I5VMosKMCtWdN', 1, 1, '2017-06-28 00:00:00', '2017-10-06 13:31:35');
+
 --
 -- Indexes for dumped tables
 --
@@ -320,6 +350,12 @@ ALTER TABLE `text_lang`
   ADD KEY `lang_id` (`language_id`);
 
 --
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -368,6 +404,11 @@ ALTER TABLE `site_info`
 --
 ALTER TABLE `text`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
