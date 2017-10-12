@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Models\Services;
+use App\Models\ServicesLang;
 
 use Helper, Session, Auth;
 
@@ -18,18 +19,12 @@ class ServicesController extends Controller
     */
     public function index(Request $request)
     {           
-        $title = isset($request->title) && $request->title != '' ? $request->title : '';
         
-        $query = Services::where('status', 1);
-       
-        if( $title != ''){
-            $query->where('alias', 'LIKE', '%'.$title.'%');
-        }
-
-        $items = $query->orderBy('display_order')->paginate(20);
+        $items = Services::whereRaw('1')
+        ->join('services_lang', 'services.id', '=', 'services_lang.services_id')->where('lang_id', 2)->orderBy('type')->orderBy('display_order')->get();
        
         
-        return view('backend.services.index', compact( 'items', 'title' ));
+        return view('backend.services.index', compact( 'items' ));
     }
 
     /**
@@ -50,29 +45,22 @@ class ServicesController extends Controller
     */
     public function store(Request $request)
     {
-        $dataArr = $request->all();
-        
-        $this->validate($request,[                                  
-            'title' => 'required',            
-            'slug' => 'required|unique:services',
-        ],
-        [          
-            'title.required' => 'Bạn chưa nhập tên',
-            'slug.required' => 'Bạn chưa nhập slug',
-            'slug.unique' => 'Slug đã được sử dụng.'
-        ]);   
-        
-        $dataArr['alias'] = Helper::stripUnicode($dataArr['title']);      
-        
-        $dataArr['created_user'] = Auth::user()->id;
-
-        $dataArr['updated_user'] = Auth::user()->id;
-
-        $dataArr['display_order'] = Helper::getNextOrder('services');
+        $dataArr = $request->all();                                        
+        $dataArr['type'] = 2;
+        $dataArr['display_order'] = Helper::getNextOrder('services', ['type' => 2]);
 
         $rs = Services::create($dataArr);
 
-        Session::flash('message', 'Tạo mới thành công');
+        $services_id = $rs->id;
+        $detail['services_id'] = $services_id;
+        foreach($dataArr['name'] as $lang_id => $name ){
+            $detail['name'] = $name;
+            $detail['lang_id'] = $lang_id;
+            $detail['description'] = isset($dataArr['description'][$lang_id]) ? $dataArr['description'][$lang_id] : null;
+            ServicesLang::create($detail);
+        }
+
+        Session::flash('message', 'Add new success.');
 
         return redirect()->route('services.index');
     }
@@ -97,14 +85,15 @@ class ServicesController extends Controller
     public function edit($id)
     {
 
+       $detailArr = [];
         $detail = Services::find($id);
-        if( Auth::user()->role < 3 ){
-            if($detail->created_user != Auth::user()->id){
-                return redirect()->route('product.index');
-            }
-        }       
 
-        return view('backend.services.edit', compact('detail'));
+        $detailList = Services::where('id', $id)->leftJoin('services_lang', 'services.id', '=', 'services_lang.services_id')->get();
+        foreach($detailList as $dataLang){
+            $detailArr[$dataLang->lang_id] = $dataLang;
+        }       
+        return view('backend.services.edit', compact('detailArr', 'detail'));
+
     }
 
     /**
@@ -118,25 +107,22 @@ class ServicesController extends Controller
     {
         $dataArr = $request->all();
         
-        $this->validate($request,[                                  
-            'title' => 'required',            
-            'slug' => 'required|unique:services,slug,'.$dataArr['id'],
-        ],
-        [          
-            'title.required' => 'Bạn chưa nhập tên',
-            'slug.required' => 'Bạn chưa nhập slug',
-            'slug.unique' => 'Slug đã được sử dụng.'
-        ]);       
+        $services_id = $dataArr['id'];
         
-        $dataArr['alias'] = Helper::stripUnicode($dataArr['title']);
-       
-        $dataArr['updated_user'] = Auth::user()->id;
-        
-        $model = Services::find($dataArr['id']);
+        $detail['services_id'] = $services_id;
 
-        $model->update($dataArr);        
-  
-        Session::flash('message', 'Cập nhật thành công');        
+        $model = Services::find($services_id);
+
+        $model->update($dataArr);  
+
+        foreach($dataArr['name'] as $lang_id => $name ){
+            $detail['name'] = $name;
+            $detail['lang_id'] = $lang_id;
+
+            $modelLang = ServicesLang::where(['services_id' => $services_id, 'lang_id' => $lang_id])->update(['name' => $name, 'description' => $dataArr['description'][$lang_id]]);
+        }
+        
+        Session::flash('message', 'Update success');         
 
         return redirect()->route('services.edit', $dataArr['id']);
     }

@@ -4,12 +4,12 @@
 <!-- Content Header (Page header) -->
 <section class="content-header">
   <h1>
-    Dịch vụ
+    Services
   </h1>
   <ol class="breadcrumb">
     <li><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-    <li><a href="{{ route( 'services.index' ) }}">Dịch vụ</a></li>
-    <li class="active">Danh sách</li>
+    <li><a href="{{ route( 'services.index' ) }}">Services</a></li>
+    <li class="active">List</li>
   </ol>
 </section>
 
@@ -20,95 +20,57 @@
       @if(Session::has('message'))
       <p class="alert alert-info" >{{ Session::get('message') }}</p>
       @endif
-      <a href="{{ route('services.create') }}" class="btn btn-info btn-sm" style="margin-bottom:5px">Tạo mới</a>
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title">Bộ lọc</h3>
-        </div>
-        <div class="panel-body">
-          <form class="form-inline" role="form" method="GET" action="{{ route('services.index') }}">            
-                     
-            <div class="form-group">
-              <label for="email">Từ khóa :</label>
-              <input type="text" class="form-control" name="title" value="{{ $title }}">
-            </div>
-            <button type="submit" class="btn btn-default btn-sm">Lọc</button>
-          </form>         
-        </div>
-      </div>
+      <a href="{{ route('services.create') }}" class="btn btn-info btn-sm" style="margin-bottom:5px">Add new</a>
+    
       <div class="box">
 
         <div class="box-header with-border">
-          <h3 class="box-title">Danh sách ( <span class="value">{{ $items->total() }} bài viết )</span></h3>
+          <h3 class="box-title">Services List</h3>
         </div>
         
         <!-- /.box-header -->
         <div class="box-body">
-          <div style="text-align:center">
-            {{ $items->appends( ['title' => $title] )->links() }}
-          </div>  
+          
           <table class="table table-bordered" id="table-list-data">
             <tr>
-              <th style="width: 1%">#</th>              
-              <th>Thumbnail</th>
-              <th>Tên dịch vụ</th>
-              <th width="1%;white-space:nowrap">Thao tác</th>
+              <th style="width: 1%">#</th>
+              
+              <th width="100px">Icon</th>              
+              <th>Name</th>              
+              <th width="1%;white-space:nowrap">Action</th>
             </tr>
             <tbody>
             @if( $items->count() > 0 )
               <?php $i = 0; ?>
               @foreach( $items as $item )
-                <?php $i ++; ?>
+                <?php $i ++; 
+
+                ?>
               <tr id="row-{{ $item->id }}">
-                <td><span class="order">{{ $i }}</span></td>       
+                <td><span class="order">{{ $i }}</span></td>               
                 <td>
-                  <img class="img-thumbnail lazy" data-original="{{ Helper::showImage($item->image_url)}}" width="145">
-                </td>        
-                <td>                  
-                  <a style="font-size:17px" href="{{ route( 'services.edit', [ 'id' => $item->id ]) }}">{{ $item->title }}</a>
-                  
-                  @if( $item->is_hot == 1 )
-                  <label class="label label-danger">HOT</label>
-                  @endif
-                  <div class="block-author">
-                      <ul>
-                        <li>
-                          <span>Tác giả:</span>
-                          <span class="name">{!! $item->createdUser->display_name !!}</span>
-                        </li>
-                        <li>
-                            <span>Ngày tạo:</span>
-                          <span class="name">{!! date('d/m/Y H:i', strtotime($item->created_at)) !!}</span>
-                          
-                        </li>
-                         <li>
-                            <span>Cập nhật:</span>
-                          <span class="name">{!! $item->updatedUser->display_name !!} ( {!! date('d/m/Y H:i', strtotime($item->updated_at)) !!} )</span>          
-                        </li>
-                      </ul>
-                    </div>
-                  <p>{{ $item->description }}</p>
+                  <img class="img-thumbnail lazy" width="40" data-original="{{ $item->image_url ? Helper::showImage($item->image_url) : URL::asset('admin/dist/img/no-image.jpg') }}" alt="{{ $item->name }}" title="{{ $item->name }}" />
                 </td>
-                <td style="white-space:nowrap"> 
-                  <a class="btn btn-default btn-sm" href="{{ route('news-detail', [$item->slug, $item->id ]) }}" target="_blank"><i class="fa fa-eye" aria-hidden="true"></i> Xem</a>                 
-                  <a href="{{ route( 'services.edit', [ 'id' => $item->id ]) }}" class="btn btn-warning btn-sm"><span class="glyphicon glyphicon-pencil"></span></a>                 
-                  
-                  <a onclick="return callDelete('{{ $item->title }}','{{ route( 'services.destroy', [ 'id' => $item->id ]) }}');" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span></a>
-                  
+                <td>                  
+                  <a style="color:#333;font-weight:bold" href="{{ route( 'services.edit', [ 'id' => $item->id ]) }}">{{ $item->name }}</a>                  
+                </td>
+                <td style="white-space:nowrap; text-align:right">                                 
+                  <a href="{{ route( 'services.edit', [ 'id' => $item->id ]) }}" class="btn btn-warning btn-sm"><i class="fa fa-pencil"></i></a>                 
+
+                  <a onclick="return callDelete('{{ $item->name_vi }}','{{ route( 'services.destroy', [ 'id' => $item->id ]) }}');" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></a>
+
                 </td>
               </tr> 
               @endforeach
             @else
             <tr>
-              <td colspan="9">Không có dữ liệu.</td>
+              <td colspan="9">No data found.</td>
             </tr>
             @endif
 
           </tbody>
           </table>
-          <div style="text-align:center">
-            {{ $items->appends( ['title' => $title] )->links() }}
-          </div>  
+         
         </div>        
       </div>
       <!-- /.box -->     
@@ -118,14 +80,18 @@
 </section>
 <!-- /.content -->
 </div>
+<style type="text/css">
+#searchForm div{
+  margin-right: 7px;
+}
+</style>
 @stop
-@section('js')
-
+@section('javascript_page')
 <script type="text/javascript">
 function callDelete(name, url){  
   swal({
-    title: 'Bạn muốn xóa "' + name +'"?',
-    text: "Dữ liệu sẽ không thể phục hồi.",
+    title: 'Are you sure you want to delete :  "' + name +'"?',
+    text: "Data can't restore.",
     type: 'warning',
     showCancelButton: true,
     confirmButtonColor: '#3085d6',
@@ -137,25 +103,23 @@ function callDelete(name, url){
   return flag;
 }
 $(document).ready(function(){
-    $('#cate_id').change(function(){
-      $(this).parents('form').submit();
-    });
-  $('#parent_id').change(function(){
-    $.ajax({
-        url: $('#route_get_cate_by_parent').val(),
-        type: "POST",
-        async: false,
-        data: {          
-            parent_id : $(this).val(),
-            type : 'list'
-        },
-        success: function(data){
-            $('#cate_id').html(data).select2('refresh');                      
-        }
-    });
+  $('input.submitForm').click(function(){
+    var obj = $(this);
+    if(obj.prop('checked') == true){
+      obj.val(1);      
+    }else{
+      obj.val(0);
+    } 
+    obj.parent().parent().parent().submit(); 
   });
-  $('.select2').select2();
-
+  
+  $('#loai_id').change(function(){
+    $('#cate_id').val('');
+    $('#searchForm').submit();
+  });
+  $('#cate_id').change(function(){
+    $('#searchForm').submit();
+  });
   $('#table-list-data tbody').sortable({
         placeholder: 'placeholder',
         handle: ".move",
@@ -174,7 +138,7 @@ $(document).ready(function(){
                 strTemp = rows[i].id;
                 strOrder += strTemp.replace('row-','') + ";";
             }     
-            updateOrder("loai_sp", strOrder);
+            updateOrder("san_pham", strOrder);
         }
     });
 });
