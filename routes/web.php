@@ -23,6 +23,14 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'backend', 'middleware' => '
         Route::post('/update', ['as' => 'services.update', 'uses' => 'ServicesController@update']);
         Route::get('{id}/destroy', ['as' => 'services.destroy', 'uses' => 'ServicesController@destroy']);
     });
+    Route::group(['prefix' => 'content'], function () {
+        Route::get('/', ['as' => 'content.index', 'uses' => 'ContentController@index']);
+        Route::get('/create', ['as' => 'content.create', 'uses' => 'ContentController@create']);
+        Route::post('/store', ['as' => 'content.store', 'uses' => 'ContentController@store']);
+        Route::get('{id}/edit',   ['as' => 'content.edit', 'uses' => 'ContentController@edit']);
+        Route::post('/update', ['as' => 'content.update', 'uses' => 'ContentController@update']);
+        Route::get('{id}/destroy', ['as' => 'content.destroy', 'uses' => 'ContentController@destroy']);
+    });
     Route::group(['prefix' => 'nearby'], function () {
         Route::get('/', ['as' => 'nearby.index', 'uses' => 'NearbyController@index']);
         Route::get('/create', ['as' => 'nearby.create', 'uses' => 'NearbyController@create']);
