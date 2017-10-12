@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.4
+-- version 4.6.5.2
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Oct 12, 2017 at 04:42 PM
--- Server version: 5.5.57-0ubuntu0.14.04.1
--- PHP Version: 7.0.24-1+ubuntu14.04.1+deb.sury.org+1
+-- Host: 127.0.0.1
+-- Generation Time: Oct 13, 2017 at 01:32 AM
+-- Server version: 10.1.21-MariaDB
+-- PHP Version: 5.6.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -107,7 +105,8 @@ INSERT INTO `content` (`id`) VALUES
 (3),
 (4),
 (5),
-(6);
+(6),
+(7);
 
 -- --------------------------------------------------------
 
@@ -126,12 +125,15 @@ CREATE TABLE `content_lang` (
 --
 
 INSERT INTO `content_lang` (`content_id`, `lang_id`, `content`) VALUES
-(1, 1, '<ul class=\"clearfix\">\r\n	<li>	\r\n		<span class=\"text\">\r\n			チェックイン　15:00\r\n		</span>\r\n	</li>\r\n	<li>	\r\n		<span class=\"text\">\r\n			チｴックウト　12:00\r\n		</span>\r\n	</li>\r\n	<li>	\r\n		<span class=\"text\">\r\n			朝食時間（無料）　6:30~9:30　場所：レストラン会場９階\r\n		</span>\r\n	</li>\r\n	<li>	\r\n		<span class=\"text\">\r\n			日本語対応可能なスタッフが随時常駐。\r\n		</span>\r\n	</li>\r\n	<li>	\r\n		<span class=\"text\">\r\n			日本人街レタントン通りより徒歩5分\r\n		</span>\r\n	</li>\r\n	<li>	\r\n		<span class=\"text\">\r\n			全室禁煙でございます。\r\n		</span>\r\n	</li>	\r\n</ul>'),
-(1, 2, '<ul class=\"clearfix\">\r\n	<li>	\r\n		<span class=\"text\">\r\n			Check – in: 15:00\r\n		</span>\r\n	</li>\r\n	<li>	\r\n		<span class=\"text\">\r\n			Check – out: 12:00\r\n		</span>\r\n	</li>\r\n	<li>	\r\n		<span class=\"text\">\r\n			Breakfast (free) from 6:30 to 9:30   Location: restaurant in 9th floor\r\n		</span>\r\n	</li>\r\n	<li>	\r\n		<span class=\"text\">\r\n			Staff capable of handling Japanese is always resident.\r\n		</span>\r\n	</li>\r\n	<li>	\r\n		<span class=\"text\">\r\n			Japanese street is 5 minutes by walk from the hotel.\r\n		</span>\r\n	</li>\r\n	<li>	\r\n		<span class=\"text\">\r\n			All rooms are non-smoking room\r\n		</span>\r\n	</li>	\r\n</ul>'),
-(1, 3, '<ul class=\"clearfix\">\r\n	<li>	\r\n		<span class=\"text\">\r\n			Giờ nhận phòng: 15:00\r\n		</span>\r\n	</li>\r\n	<li>	\r\n		<span class=\"text\">\r\n			Giờ trả phòng: 12:00\r\n		</span>\r\n	</li>\r\n	<li>	\r\n		<span class=\"text\">\r\n			Ăn sáng (miễn phí) từ 6:30 đến 9:30 tại nhà hàng ở lầu 9 của khách sạn\r\n		</span>\r\n	</li>\r\n	<li>	\r\n		<span class=\"text\">\r\n			Luôn có nhân viên biết tiếng Nhật túc trực\r\n		</span>\r\n	</li>\r\n	<li>	\r\n		<span class=\"text\">\r\n			Chỉ cách khu phố Nhật 5 phút đi bộ\r\n		</span>\r\n	</li>\r\n	<li>	\r\n		<span class=\"text\">\r\n			Tất cả các phòng trong khách sạn là phòng KHÔNG hút thuốc\r\n		</span>\r\n	</li>	\r\n</ul>'),
-(2, 1, '<ul class=\"list-inline clearfix\">\r\n	<li>	\r\n		<span class=\"text\">\r\n			レイトチェックアウト料金（１８：００時までのご利用）はお部屋代の５０％となります。それ以降を過ぎますと、１泊料金となります。\r\n		</span>\r\n	</li>\r\n	<li>	\r\n		<span class=\"text\">\r\n			上記料金にはサービス料5%,税10%は含まれておりません。\r\n		</span>\r\n	</li>\r\n	<li>	\r\n		<span class=\"text\">\r\n			曜日やイベント等により、料金が変更になる場合がございます。\r\n		</span>\r\n	</li>\r\n	<li>	\r\n		<span class=\"text\">\r\n			添い寝のお子様（六歳まで）は無料です。ただし、アメニティグッズや枕は付きません。アメニティや枕、タオル等のご利用の場合は10ドルとなります。お子様の人数はリクエスト欄にご記入ください。\r\n		</span>\r\n	</li>\r\n	<li>	\r\n		<span class=\"text\">\r\n			キャンセルは予約日の48時間前（2日前）に、ご連絡お願い致します。これ以降を過ぎますと、一泊分のキャンセル料が発生します。\r\n		</span>\r\n	</li>	\r\n</ul>'),
-(2, 2, '<ul class=\"list-inline clearfix\">\r\n	<li>	\r\n		<span class=\"text\">\r\n			Late check – out fee is 50% of room charge (until 18:00). After that, it will be one night charge.\r\n		</span>\r\n	</li>\r\n	<li>	\r\n		<span class=\"text\">\r\n			All prices are subject to 10% VAT and 5% service charge.\r\n		</span>\r\n	</li>\r\n	<li>	\r\n		<span class=\"text\">\r\n			Depending on the day of the week or event, the price may be varied.\r\n		</span>\r\n	</li>\r\n	<li>	\r\n		<span class=\"text\">\r\n			Children (under 6 years old) are free of charge. However, amenities and pillows are not included. For usage of amenities, pillows, towels, and so on, it cost 10 USD. Please fill in at the request box.\r\n		</span>\r\n	</li>\r\n	<li>	\r\n		<span class=\"text\">\r\n			Cancellation must be made 48 hours (2 days) before the date of arrival. After this time, one night cancellation fee will be applied.\r\n		</span>\r\n	</li>	\r\n</ul>'),
-(2, 3, '<ul class=\"list-inline clearfix\">\r\n	<li>	\r\n		<span class=\"text\">\r\n			Trả phòng trễ sẽ trả 50% tiền phòng (trước 18:00). Sau 18:00 sẽ tính một đêm tiền phòng.\r\n		</span>\r\n	</li>\r\n	<li>	\r\n		<span class=\"text\">\r\n			Giá phòng chưa bao gồm 10% VAT và 5% phí phục vụ\r\n		</span>\r\n	</li>\r\n	<li>	\r\n		<span class=\"text\">\r\n			Tùy thuộc vào thời điểm mà giá phòng có thể thay đổi\r\n		</span>\r\n	</li>\r\n	<li>	\r\n		<span class=\"text\">\r\n			Trẻ em (dưới 6 tuổi) sẽ không bị tính phí. Tuy nhiên các trang bị trong phòng và gối nằm sẽ không được bao gồm. Vì thế để sử dụng các vật trên khách sẽ phải trả thêm 10 USD. Nếu có trẻ em đi kèm, vui lòng điền vào ô yêu cầu.\r\n		</span>\r\n	</li>\r\n	<li>	\r\n		<span class=\"text\">\r\n			Yêu cầu hủy phòng phải được gửi trước 48 tiếng (tức 2 ngày) tính từ ngày đến. Sau khoảng thời gian này, nếu khách hủy phòng sẽ bị tính một đêm tiền phòng.\r\n		</span>\r\n	</li>	\r\n</ul>');
+(1, 1, '<ul class=\"clearfix\">\r\n	<li><span class=\"text\">チェックイン　<strong>15:00</strong></span></li>\r\n	<li><span class=\"text\">チｴックウト　<strong>12:00 </strong></span></li>\r\n	<li><span class=\"text\">朝食時間（無料）　<strong>6:30~9:30</strong>　場所：レストラン会場９階 </span></li>\r\n	<li><span class=\"text\">日本語対応可能なスタッフが随時常駐。 </span></li>\r\n	<li><span class=\"text\">日本人街レタントン通りより徒歩5分 </span></li>\r\n	<li><span class=\"text\">全室禁煙でございます。 </span></li>\r\n</ul>'),
+(1, 2, '<ul class=\"clearfix\">\r\n	<li><span class=\"text\">Check &ndash; in: <strong>15:00</strong></span></li>\r\n	<li><span class=\"text\">Check &ndash; out: <strong>12:00 </strong></span></li>\r\n	<li><span class=\"text\">Breakfast (free) from <strong>6:30 to 9:30</strong> Location: restaurant in 9th floor </span></li>\r\n	<li><span class=\"text\">Staff capable of handling Japanese is always resident. </span></li>\r\n	<li><span class=\"text\">Japanese street is 5 minutes by walk from the hotel. </span></li>\r\n	<li><span class=\"text\">All rooms are non-smoking room </span></li>\r\n</ul>'),
+(1, 3, '<ul class=\"clearfix\">\r\n	<li><span class=\"text\">Giờ nhận ph&ograve;ng: <strong>15:00</strong></span></li>\r\n	<li><span class=\"text\">Giờ trả ph&ograve;ng: <strong>12:00 </strong></span></li>\r\n	<li><span class=\"text\">Ăn s&aacute;ng (miễn ph&iacute;) từ<strong> 6:30 đến 9:30</strong> tại nh&agrave; h&agrave;ng ở lầu 9 của kh&aacute;ch sạn </span></li>\r\n	<li><span class=\"text\">Lu&ocirc;n c&oacute; nh&acirc;n vi&ecirc;n biết tiếng Nhật t&uacute;c trực </span></li>\r\n	<li><span class=\"text\">Chỉ c&aacute;ch khu phố Nhật 5 ph&uacute;t đi bộ </span></li>\r\n	<li><span class=\"text\">Tất cả c&aacute;c ph&ograve;ng trong kh&aacute;ch sạn l&agrave; ph&ograve;ng KH&Ocirc;NG h&uacute;t thuốc </span></li>\r\n</ul>'),
+(2, 1, '<ul class=\"list-inline clearfix\">\r\n	<li><span class=\"text\">レイトチェックアウト料金（１８：００時までのご利用）はお部屋代の５０％となります。それ以降を過ぎますと、１泊料金となります。 </span></li>\r\n	<li><span class=\"text\">上記料金にはサービス料5%,税10%は含まれておりません。 </span></li>\r\n	<li><span class=\"text\">曜日やイベント等により、料金が変更になる場合がございます。 </span></li>\r\n	<li><span class=\"text\">添い寝のお子様（六歳まで）は無料です。ただし、アメニティグッズや枕は付きません。アメニティや枕、タオル等のご利用の場合は10ドルとなります。お子様の人数はリクエスト欄にご記入ください。 </span></li>\r\n	<li><span class=\"text\">キャンセルは予約日の48時間前（2日前）に、ご連絡お願い致します。これ以降を過ぎますと、一泊分のキャンセル料が発生します。 </span></li>\r\n</ul>'),
+(2, 2, '<ul class=\"list-inline clearfix\">\r\n	<li><span class=\"text\">Late check &ndash; out fee is 50% of room charge (until 18:00). After that, it will be one night charge. </span></li>\r\n	<li><span class=\"text\">All prices are subject to 10% VAT and 5% service charge. </span></li>\r\n	<li><span class=\"text\">Depending on the day of the week or event, the price may be varied. </span></li>\r\n	<li><span class=\"text\">Children (under 6 years old) are free of charge. However, amenities and pillows are not included. For usage of amenities, pillows, towels, and so on, it cost 10 USD. Please fill in at the request box. </span></li>\r\n	<li><span class=\"text\">Cancellation must be made 48 hours (2 days) before the date of arrival. After this time, one night cancellation fee will be applied. </span></li>\r\n</ul>'),
+(2, 3, '<ul class=\"list-inline clearfix\">\r\n	<li><span class=\"text\">Trả ph&ograve;ng trễ sẽ trả 50% tiền ph&ograve;ng (trước 18:00). Sau 18:00 sẽ t&iacute;nh một đ&ecirc;m tiền ph&ograve;ng. </span></li>\r\n	<li><span class=\"text\">Gi&aacute; ph&ograve;ng chưa bao gồm 10% VAT v&agrave; 5% ph&iacute; phục vụ </span></li>\r\n	<li><span class=\"text\">T&ugrave;y thuộc v&agrave;o thời điểm m&agrave; gi&aacute; ph&ograve;ng c&oacute; thể thay đổi </span></li>\r\n	<li><span class=\"text\">Trẻ em (dưới 6 tuổi) sẽ kh&ocirc;ng bị t&iacute;nh ph&iacute;. Tuy nhi&ecirc;n c&aacute;c trang bị trong ph&ograve;ng v&agrave; gối nằm sẽ kh&ocirc;ng được bao gồm. V&igrave; thế để sử dụng c&aacute;c vật tr&ecirc;n kh&aacute;ch sẽ phải trả th&ecirc;m 10 USD. Nếu c&oacute; trẻ em đi k&egrave;m, vui l&ograve;ng điền v&agrave;o &ocirc; y&ecirc;u cầu. </span></li>\r\n	<li><span class=\"text\">Y&ecirc;u cầu hủy ph&ograve;ng phải được gửi trước 48 tiếng (tức 2 ng&agrave;y) t&iacute;nh từ ng&agrave;y đến. Sau khoảng thời gian n&agrave;y, nếu kh&aacute;ch hủy ph&ograve;ng sẽ bị t&iacute;nh một đ&ecirc;m tiền ph&ograve;ng. </span></li>\r\n</ul>'),
+(7, 1, 'キャンセルは予約日の48時間前（2日前）に、ご連絡お願い致します。これ以降を過ぎますと、一泊分のキャンセル料が発生します。'),
+(7, 2, 'Cancellation must be made 48 hours (2 days) before the date of arrival. After this time, one night cancellation fee will be applied.'),
+(7, 3, 'Y&ecirc;u cầu hủy ph&ograve;ng phải được gửi trước 48 tiếng (tức 2 ng&agrave;y) t&iacute;nh từ ng&agrave;y đến. Sau khoảng thời gian n&agrave;y, nếu kh&aacute;ch hủy ph&ograve;ng sẽ bị t&iacute;nh một đ&ecirc;m tiền ph&ograve;ng.');
 
 -- --------------------------------------------------------
 
@@ -674,80 +676,66 @@ ALTER TABLE `users`
 --
 ALTER TABLE `album`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `album_img`
 --
 ALTER TABLE `album_img`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `album_lang`
 --
 ALTER TABLE `album_lang`
   MODIFY `album_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `articles`
 --
 ALTER TABLE `articles`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `content`
 --
 ALTER TABLE `content`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT for table `language`
 --
 ALTER TABLE `language`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
 --
 -- AUTO_INCREMENT for table `meta_data`
 --
 ALTER TABLE `meta_data`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `nearby`
 --
 ALTER TABLE `nearby`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
 --
 -- AUTO_INCREMENT for table `room`
 --
 ALTER TABLE `room`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
 --
 -- AUTO_INCREMENT for table `services`
 --
 ALTER TABLE `services`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
-
 --
 -- AUTO_INCREMENT for table `site_info`
 --
 ALTER TABLE `site_info`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `text`
 --
 ALTER TABLE `text`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-COMMIT;
-
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

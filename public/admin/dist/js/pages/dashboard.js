@@ -93,6 +93,22 @@ $(document).ready(function(){
       height : 200
     });
   }
+  if($('#content_1').length == 1){
+    CKEDITOR.replace( 'content_1', {
+      height : 400
+    });
+  }
+  if($('#content_2').length == 1){
+    CKEDITOR.replace( 'content_2', {
+      height : 400
+    });
+  }
+  if($('#content_3').length == 1){
+    CKEDITOR.replace( 'content_3', {
+      height : 400
+    });
+  }
+
   $(document).on('click', '#btnSaveTagAjax', function(){
       $.ajax({
         url : $('#formAjaxTag').attr('action'),
