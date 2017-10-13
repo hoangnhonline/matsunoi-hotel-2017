@@ -8,8 +8,7 @@
 			<div class="col-sm-6 col-sm-push-6">
 				<div class="block-btn-fix">
 					<div class="block-content fixed-res">
-						<a class="btn btn-reservation btn-1e" href="#" data-toggle="modal" data-target="#ModalSusscess">RESERVATION</a><!-- Btn Reservation -->
-						<!-- <a class="btn btn-reservation btn-1e" href="#" data-toggle="modal" data-target="#ModalreCheck">Demo Recheck</a> --><!-- Btn Reservation -->
+						<a class="btn btn-reservation btn-1e" href="#" data-toggle="modal" data-target="#ModalSusscess">{!! __('text.reservation') !!}</a>
 					</div>
 				</div><!-- block-btn-fix -->
 			</div><!-- col-sm-6 -->
@@ -17,8 +16,8 @@
 				<div class="block-breadcrumb">
 					<div class="container">
 						<ul class="breadcrumb">
-							<li><a href="#" title="Home">Home</a></li>
-							<li class="active">Nearby</li>
+							<li><a href="{!! route('home', ['locale' => $locale] ) !!}" title="{!! __('text.home') !!}">{!! __('text.home') !!}</a></li>
+							<li class="active">{!! __('text.gallery') !!}</li>
 						</ul>
 					</div>
 				</div><!-- /block-breadcrumb -->
