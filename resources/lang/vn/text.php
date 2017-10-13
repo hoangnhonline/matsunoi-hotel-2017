@@ -11,7 +11,7 @@ return [
     'access' => 'Đi đến',
     'view_detail' => 'Chi tiết',
     'special_offers' => 'Ưu đãi đặc biệt',
-    'per_night' => 'một đêm',
+    'per_night' => ' đêm',
     'book_now' => 'Đặt ngay',
     'out_of_room' => 'Hết phòng',
     'payment_method' => 'Hình thức chi trả',

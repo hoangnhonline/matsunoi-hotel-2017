@@ -48,13 +48,10 @@
                 <td><span class="order">{{ $i }}</span></td>               
                 
                 <td>                  
-                  <a style="color:#333;font-weight:bold" href="{{ route( 'content.edit', [ 'id' => $item->id ]) }}">{!! $item->content !!}</a>
+                  {!! $item->content !!}
                 </td>
                 <td style="white-space:nowrap; text-align:right">                                 
-                  <a href="{{ route( 'content.edit', [ 'id' => $item->id ]) }}" class="btn btn-warning btn-sm"><i class="fa fa-pencil"></i></a>                 
-
-                  <a onclick="return callDelete('{{ $item->name_vi }}','{{ route( 'content.destroy', [ 'id' => $item->id ]) }}');" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></a>
-
+                  <a href="{{ route( 'content.edit', [ 'id' => $item->id ]) }}" class="btn btn-warning btn-sm"><i class="fa fa-pencil"></i></a>
                 </td>
               </tr> 
               @endforeach
@@ -79,6 +76,12 @@
 <style type="text/css">
 #searchForm div{
   margin-right: 7px;
+}
+.list-inline>li {
+    display: list-item !important;
+    padding-right: 5px;
+    padding-left: 30px;
+    list-style: inside !important;
 }
 </style>
 @stop

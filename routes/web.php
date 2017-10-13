@@ -305,3 +305,12 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'backend', 'middleware' => '
         Route::get('{id}/destroy', ['as' => 'services.destroy', 'uses' => 'ServicesController@destroy']);
     });   
 });
+
+
+Route::group(['namespace' => 'Frontend'], function()
+{
+    Route::get('/{locale?}', ['as' => 'home', 'uses' => 'HomeController@index']);
+    Route::get('/{locale}/nearby.html', ['as' => 'nearby', 'uses' => 'HomeController@nearby']);
+    Route::get('/{locale}/services.html', ['as' => 'services', 'uses' => 'HomeController@services']);
+    Route::get('/{locale}/gallery.html', ['as' => 'gallery', 'uses' => 'HomeController@gallery']);
+});
