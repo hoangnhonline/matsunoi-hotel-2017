@@ -75,9 +75,9 @@
 				<nav>
 					<ul class="nav-menu">
 						<li @if( \Request::route()->getName() == 'home' ) class="active" @endif><a href="{!! route('home') !!}" title="{!! __('text.home') !!}">{!! __('text.home') !!}</a></li>
-						<li><a href="{!! route('nearby', ['locale' => $locale]) !!}" title="{!! __('text.nearby') !!}">{!! __('text.nearby') !!}</a></li>
-						<li><a href="{!! route('gallery', ['locale' => $locale]) !!}" title="{!! __('text.gallery') !!}">{!! __('text.gallery') !!}</a></li>
-						<li><a href="{!! route('services', ['locale' => $locale]) !!}" title="{!! __('text.services') !!}">{!! __('text.services') !!}</a></li>
+						<li @if( \Request::route()->getName() == 'nearby' ) class="active" @endif><a href="{!! route('nearby', ['locale' => $locale]) !!}" title="{!! __('text.nearby') !!}">{!! __('text.nearby') !!}</a></li>
+						<li @if( \Request::route()->getName() == 'gallery' ) class="active" @endif><a href="{!! route('gallery', ['locale' => $locale]) !!}" title="{!! __('text.gallery') !!}">{!! __('text.gallery') !!}</a></li>
+						<li @if( \Request::route()->getName() == 'services' ) class="active" @endif><a href="{!! route('services', ['locale' => $locale]) !!}" title="{!! __('text.services') !!}">{!! __('text.services') !!}</a></li>
 					</ul>
 				</nav>
 			</div>
