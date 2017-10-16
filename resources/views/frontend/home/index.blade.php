@@ -78,10 +78,8 @@
 						<div class="block-content clearfix">
 							<div class="item">
 								<div class="item-content">
-									<div class="image">
-										<a href="detail.html" title="The title of this hotel room suit">
-											<img src="{{ URL::asset('public/assets/images/room/room1.jpg') }}" alt="The title of this hotel room suit">
-										</a>
+									<div class="image">										
+										<img src="{{ URL::asset('public/assets/images/room/room1.jpg') }}" alt="The title of this hotel room suit">
 									</div><!-- /image -->
 									<div class="description">
 										<h2 class="name">
