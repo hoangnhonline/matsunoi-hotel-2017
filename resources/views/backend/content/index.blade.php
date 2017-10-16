@@ -20,8 +20,7 @@
       @if(Session::has('message'))
       <p class="alert alert-info" >{{ Session::get('message') }}</p>
       @endif
-      <a href="{{ route('content.create') }}" class="btn btn-info btn-sm" style="margin-bottom:5px">Add new</a>
-    
+     
       <div class="box">
 
         <div class="box-header with-border">
