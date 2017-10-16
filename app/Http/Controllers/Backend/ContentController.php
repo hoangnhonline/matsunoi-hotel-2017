@@ -20,8 +20,7 @@ class ContentController extends Controller
     public function index(Request $request)
     {           
         
-        $items = Content::whereRaw('1')
-        ->join('content_lang', 'content.id', '=', 'content_lang.content_id')->where('lang_id', 2)->get();
+        $items = ContentLang::where('lang_id', 2)->get();
        
         
         return view('backend.content.index', compact( 'items' ));
@@ -45,12 +44,7 @@ class ContentController extends Controller
     */
     public function store(Request $request)
     {
-        $dataArr = $request->all();                                        
-
-        $rs = Content::create([]);
-
-        $content_id = $rs->id;
-        $detail['content_id'] = $content_id;
+        $dataArr = $request->all();
         foreach($dataArr['content'] as $lang_id => $content ){
             $detail['content'] = $content;
             $detail['lang_id'] = $lang_id;        
@@ -81,14 +75,14 @@ class ContentController extends Controller
     */
     public function edit($id)
     {
-        $detailArr = [];
-        $detail = Content::find($id);
+        $detailArr = [];        
 
-        $detailList = Content::where('id', $id)->leftJoin('content_lang', 'content.id', '=', 'content_lang.content_id')->get();
+        $detailList = ContentLang::where('id', $id)->get();
+
         foreach($detailList as $dataLang){
-            $detailArr[$dataLang->lang_id] = $dataLang;
+            $detailArr[$dataLang->lang_id] = $dataLang;            
         }       
-        return view('backend.content.edit', compact('detailArr', 'detail'));
+        return view('backend.content.edit', compact('detailArr', 'id'));
     }
 
     /**
@@ -102,13 +96,12 @@ class ContentController extends Controller
     {
         $dataArr = $request->all();
         
-        $content_id = $dataArr['id'];
+        $content_id = $dataArr['id'];       
         
-        $detail['content_id'] = $content_id;
 
         foreach($dataArr['content'] as $lang_id => $content ){                        
 
-            $modelLang = ContentLang::where(['content_id' => $content_id, 'lang_id' => $lang_id])->update(['content' => $content]);
+            $modelLang = ContentLang::where(['id' => $content_id, 'lang_id' => $lang_id])->update(['content' => $content]);
         }
           
         Session::flash('message', 'Update success');        

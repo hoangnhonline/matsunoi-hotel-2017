@@ -44,214 +44,18 @@
 	<![endif]-->
 </head>
 <body>
-	<header class="header">
-		<div class="header-top">	
-			<div class="container">
-				<div class="row">
-					<div class="block-logo col-sm-3 col-xs-12">
-						<h1 class="hide">Matsunoi Hotel</h1>
-						<a href="{!! route('home') !!}" title="{!! __('text.home') !!}"><img src="{{ URL::asset('public/assets/images/logo.png') }}" alt="Logo MATSUNOI HOTEL"></a>
-					</div><!-- /block-logo -->
-					<div class="block-logo2 col-sm-6 col-xs-12">
-						<a href="{!! route('home') !!}" title="ADDRESS MATSUNOI HOTEL"><img src="{{ URL::asset('public/assets/images/logo2.png') }}" alt="ADDRESS MATSUNOI HOTEL"></a>
-					</div><!-- /block-logo2 -->
-					<div class="block-lang-phone col-sm-3 col-xs-12">
-						<div class="language">
-							<ul>
-								<li><a href="{!! route('home') !!}" title="Japanese"><img src="{{ URL::asset('public/assets/images/japan.png') }}" alt="Japanese"></a></li>
-								<li><a href="{!! route('home', [ 'locale' => 'en'] ) !!}" title="English"><img src="{{ URL::asset('public/assets/images/en-icon.gif') }}" alt="English"></a></li>
-								<li><a href="{!! route('home', [ 'locale' => 'vn'] ) !!}" title="Vietnamese"><img src="{{ URL::asset('public/assets/images/vietnam.png') }}" alt="Vietnamese"></a></li>
-							</ul>
-						</div>
-						<p class="phone">
-							<i class="fa fa-phone"></i>02838246068
-						</p>
-					</div><!-- /block-lang-phone -->
-				</div>
-			</div>
-		</div><!-- /header-top -->
-		<div class="menu fixed">
-			<div class="container">
-				<nav>
-					<ul class="nav-menu">
-						<li @if( \Request::route()->getName() == 'home' ) class="active" @endif><a href="{!! route('home') !!}" title="{!! __('text.home') !!}">{!! __('text.home') !!}</a></li>
-						<li @if( \Request::route()->getName() == 'nearby' ) class="active" @endif><a href="{!! route('nearby', ['locale' => $locale]) !!}" title="{!! __('text.nearby') !!}">{!! __('text.nearby') !!}</a></li>
-						<li @if( \Request::route()->getName() == 'gallery' ) class="active" @endif><a href="{!! route('gallery', ['locale' => $locale]) !!}" title="{!! __('text.gallery') !!}">{!! __('text.gallery') !!}</a></li>
-						<li @if( \Request::route()->getName() == 'services' ) class="active" @endif><a href="{!! route('services', ['locale' => $locale]) !!}" title="{!! __('text.services') !!}">{!! __('text.services') !!}</a></li>
-					</ul>
-				</nav>
-			</div>
-		</div><!-- /menu -->
-	</header><!-- /header -->
+	
+	@include('frontend.partials.header')
 
 	@yield('content')
 
-
-	<footer class="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-4 widget widget-link">
-					<div class="block-title">
-						<span>{!! __('text.connected_links') !!}</span>
-					</div>
-					<div class="block-content">
-						<ul>
-							<li><a href="#" title="The title of this link is writen here">The title of this link is writen here</a></li>
-							<li><a href="#" title="The title of this link is writen here">The title of this link is writen here</a></li>
-							<li><a href="#" title="The title of this link is writen here">The title of this link is writen here</a></li>
-							<li><a href="#" title="The title of this link is writen here">The title of this link is writen here</a></li>
-						</ul>
-					</div>
-				</div><!-- widget -->
-				<div class="col-sm-4 widget widget-social">
-					<div class="block-title">
-						<span>{!! __('text.social_contacts') !!}</span>
-					</div>
-					<div class="block-content">
-						<ul>
-							<li class="twitter"><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-							<li class="facebook"><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-							<li class="google-plus"><a href="#" title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
-							<li class="skype"><a href="#" title="Skype"><i class="fa fa-skype"></i></a></li>
-						</ul>
-					</div>
-				</div><!-- widget -->
-				<div class="col-sm-4 widget widget-address">
-					<div class="block-title">
-						<span>{!! __('text.our_information') !!}</span>
-					</div>
-					<div class="block-content">
-						<ul>
-							<li><i class="fa fa-map-marker"></i> 24/22 Dong Du, Ben Nghe Ward, District 1, HCMC</li>
-							<li><i class="fa fa-phone"></i> 02838246068</li>
-							<li><i class="fa fa-envelope"></i> info@matsunoi.vn</li>
-							<li><i class="fa fa-location-arrow"></i> 02838246069</li>
-						</ul>
-					</div>
-				</div><!-- widget -->
-			</div>
-		</div>	
-	</footer><!-- footer -->
+	@include('frontend.partials.footer')
 
 	<a id="return-to-top" class="td-scroll-up" href="javascript:void(0)">
   		<i class="fa fa-angle-up" aria-hidden="true"></i>
 	</a><!-- return to top -->
 
-	
-	<div class="modal fade ModalSusscess" id="ModalSusscess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		<div class="modal-dialog modal-md" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<i class="fa fa-times-circle"></i>
-					</button>
-					<h4 class="modal-title" id="myModalLabel">{!! __('text.reservation') !!}</h4>
-				</div>
-				<div class="modal-body">
-					<form action="#" method="get" class="block-cus-info">
-						<div class="row">
-							<div class="col-sm-6">
-								<div class="form-group">
-						            <div class='input-group date datetimepicker' id='datetimepicker6'>
-						                <input type='text' class="form-control" placeholder="{!! __('text.check_in') !!}" />
-						                <span class="input-group-addon">
-						                    <span class="glyphicon glyphicon-calendar"></span>
-						                </span>
-						            </div>
-						        </div>
-							</div>
-							<div class="col-sm-6">
-								<div class="form-group">
-						            <div class='input-group date datetimepicker' id='datetimepicker7'>
-						                <input type='text' class="form-control" placeholder="{!! __('text.check_out') !!}" />
-						                <span class="input-group-addon">
-						                    <span class="glyphicon glyphicon-calendar"></span>
-						                </span>
-						            </div>
-						        </div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-6">
-								<div class="form-group">
-						            <select name="" class="form-control" data-width="100%">
-										<option value="">{!! __('text.number_of_guests') !!}</option>
-									</select>
-						        </div>
-							</div>
-							<div class="col-sm-6">
-								<div class="form-group">
-					             	<select name="" class="form-control" data-width="100%">
-										<option value="">{!! __('text.room_type') !!}</option>
-									</select>
-						        </div>
-							</div>
-						</div>
-						<div class="group-btn text-center">
-							<a href="#" class="btn btn-check btn-1e">{!! __('text.check') !!}</a>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div><!-- /#ModalSusscess -->
-
-	<div class="modal fade ModalreCheck" id="ModalreCheck" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		<div class="modal-dialog modal-md" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<i class="fa fa-times-circle"></i>
-					</button>
-					<h4 class="modal-title" id="myModalLabel">{!! __('text.sorry_out_of_room') !!}</h4>
-				</div>
-				<div class="modal-body">
-					<div class="form-group">
-						{!! $contentList[9] !!}
-					</div>
-					<div class="group-btn text-center">
-						<a href="#" class="btn btn-checkagain btn-2e">{!! __('text.check_again') !!}</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div><!-- /#ModalreCheck -->
-
-	<div class="modal fade ModalSusscess" id="arrival-airport" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		<div class="modal-dialog modal-md" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<i class="fa fa-times-circle"></i>
-					</button>
-					<h4 class="modal-title" id="myModalLabel">{!! __('text.airport') !!}</h4>
-				</div>
-				<div class="modal-body">
-					<div class="form-group">
-						{!! $contentList[7] !!}
-					</div>
-				</div>
-			</div>
-		</div>
-	</div><!-- /#ModalreCheck -->
-
-	<div class="modal fade ModalSusscess" id="at-taxi-stand" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		<div class="modal-dialog modal-md" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<i class="fa fa-times-circle"></i>
-					</button>
-					<h4 class="modal-title" id="myModalLabel">{!! __('text.at_taxi_stand') !!}</h4>
-				</div>
-				<div class="modal-body">
-					<div class="form-group">
-						{!! $contentList[8] !!}
-					</div>
-				</div>
-			</div>
-		</div>
-	</div><!-- /#ModalreCheck -->
+		
 
 	<!-- ===== JS ===== -->
 	<script src="{{ URL::asset('public/assets/js/jquery.min.js') }}"></script>
@@ -271,11 +75,11 @@
 
 	<script type="text/javascript">
         $(function () {
-	        $("#datetimepicker6").on("dp.change", function (e) {
-	            $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+	        $("#check_in").on("dp.change", function (e) {
+	            $('#check_out').data("DateTimePicker").minDate(e.date);
 	        });
-	        $("#datetimepicker7").on("dp.change", function (e) {
-	            $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+	        $("#check_out").on("dp.change", function (e) {
+	            $('#check_in').data("DateTimePicker").maxDate(e.date);
 	        });
 	    });
     </script>

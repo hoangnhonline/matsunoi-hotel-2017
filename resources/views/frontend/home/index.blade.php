@@ -7,7 +7,7 @@
 	<div class="container">
 		<div class="block-btn-fix">
 			<div class="block-content fixed-res">
-				<a class="btn btn-reservation btn-1e" href="#" data-toggle="modal" data-target="#ModalSusscess">{!! __('text.reservation') !!}</a><!-- Btn Reservation -->
+				<a class="btn btn-reservation btn-1e" href="javascript:;" data-toggle="modal" data-target="#ModalSusscess">{!! __('text.reservation') !!}</a><!-- Btn Reservation -->
 				<!-- <a class="btn btn-reservation btn-1e" href="#" data-toggle="modal" data-target="#ModalreCheck">Demo Recheck</a> --><!-- Btn Reservation -->
 			</div>
 		</div><!-- block-btn-fix -->
@@ -62,13 +62,13 @@
 						</div>
 						<div class="col-sm-6">
 							<div class="block block-map">
-								<object class="map" data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126263.60819855973!2d-84.44808690325613!3d33.735934882617194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDQ0JzQ1LjQiTiA4NMKwMjMnMzUuMyJX!5e0!3m2!1svi!2s!4v1475105845390"></object>
+								<object class="map" data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.446714668741!2d106.70293195081287!3d10.777057692283382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f4670702e31%3A0xa5777fb3853e32ec!2sMatsunoi+Hotel!5e0!3m2!1svi!2s!4v1508120390105"></object>								
 							</div><!-- /block-map -->
 						</div>
 					</div><!-- row -->
 					@else
 					<div class="block block-map">
-						<object class="map" data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126263.60819855973!2d-84.44808690325613!3d33.735934882617194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDQ0JzQ1LjQiTiA4NMKwMjMnMzUuMyJX!5e0!3m2!1svi!2s!4v1475105845390"></object>
+						<object class="map" data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.446714668741!2d106.70293195081287!3d10.777057692283382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f4670702e31%3A0xa5777fb3853e32ec!2sMatsunoi+Hotel!5e0!3m2!1svi!2s!4v1508120390105"></object>
 					</div><!-- /block-map -->
 					@endif
 					<div class="block block-product">

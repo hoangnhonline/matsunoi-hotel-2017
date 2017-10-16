@@ -19,8 +19,7 @@
       <i class="fa fa-arrow-left"></i> Back      
     </a>
     <form role="form" method="POST" action="{{ route('content.update') }}" id="dataForm">
-    <input type="hidden" name="id" value="{{ $detail->id }}">
-
+    <input type="hidden" name="id" value="{{ $id }}">
     <div class="row">
       <!-- left column -->
 
