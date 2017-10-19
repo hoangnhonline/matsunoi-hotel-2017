@@ -15,7 +15,7 @@
 					<li>
 						<a href="http://matsunoi.com" target="_blank" title="MATSUNOI JAPAN">
 							<span class="image"><img src="{{ URL::asset('public/assets/images/icon/tokyo-tower.png') }}" alt=""></span>
-							<span class="text">Our country Japan</span>
+							<span class="text">JAPAN</span>
 						</a>
 					</li>
 				</ul>
