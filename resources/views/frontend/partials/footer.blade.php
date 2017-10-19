@@ -7,10 +7,15 @@
 				</div>
 				<div class="block-content">
 					<ul>
-						<li><a href="#" title="The title of this link is writen here">The title of this link is writen here</a></li>
-						<li><a href="#" title="The title of this link is writen here">The title of this link is writen here</a></li>
-						<li><a href="#" title="The title of this link is writen here">The title of this link is writen here</a></li>
-						<li><a href="#" title="The title of this link is writen here">The title of this link is writen here</a></li>
+						@if($locale == "jp")
+						<li><a href="http://www.shisuitei.com/" target="_blank" title="紫翠亭">紫翠亭</a></li>
+						<li><a href="http://www.kairi.co.jp/" target="_blank" title="かいり">かいり</a></li>
+						<li><a href="http://www.sarugakyo.co.jp/" target="_blank" title="千の谷">千の谷</a></li>
+						@else
+						<li><a href="http://www.shisuitei.com/" target="_blank" title="Shisuitei">Shisuitei</a></li>
+						<li><a href="http://www.kairi.co.jp/" target="_blank" title="Kairi">Kairi</a></li>
+						<li><a href="http://www.sarugakyo.co.jp/" target="_blank" title="Sen no Tani">Sen no Tani</a></li>
+						@endif
 					</ul>
 				</div>
 			</div><!-- widget -->

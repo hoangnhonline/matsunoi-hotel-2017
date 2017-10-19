@@ -119,13 +119,13 @@
 							<div class="item">
 								<div class="item-content">
 									<div class="image">
-										<a href="detail.html" title="The title of this hotel room suit">
-											<img src="{{ URL::asset('public/assets/images/room/room3.jpg') }}" alt="The title of this hotel room suit">
+										<a href="detail.html" title="SUPERIOR">
+											<img src="{{ URL::asset('public/assets/images/room/room3.jpg') }}" alt="SUPERIOR">
 										</a>
 									</div><!-- /image -->
 									<div class="description">
 										<h2 class="name">
-											<a href="The title of this hotel room suit" title="">SUPERIOR</a>
+											<a href="SUPERIOR" title="SUPERIOR">SUPERIOR</a>
 										</h2>
 										<div class="price">
 											<span class="value">70 USD</span>
@@ -147,13 +147,13 @@
 							<h3 class="title">{!! __('text.payment_method') !!}</h3>
 						</div>
 						<div class="box-content">
-							<p class="caption">We accept cash and credit cards.</p>
+							<p class="caption">{!! __('text.we_accept') !!}</p>
 							<ul class="list-inline clearfix">
 								<li>
-									<span class="text">Cash will be only by <strong>VND</strong></span>
+									<span class="text">{!! __('text.cash_will_be') !!}</span>
 								</li>
 								<li>
-									<span class="text">Credit cards accepted are: <strong>Master Card, Visa</strong></span>
+									<span class="text">{!! __('text.credit_cards_accepted') !!} <img src="{{ URL::asset('public/assets/images/visa_mastercard_jcblogo.jpg') }}" alt="Master Card" style="display: inline-block;"></span>
 								</li>
 							</ul>
 						</div>

@@ -40,5 +40,8 @@ return [
     'airport' => 'At arrival gate of airport',
     'at_taxi_stand' => 'At taxi stand',
     'content_access' => '20 to 30 minutes by taxi from Tan Son Nhat International Airport. Around 1000 yen to 1500 yen (It depends on traffic situation)',
-    'catching' => 'Catching a taxi'
+    'catching' => 'Catching a taxi',
+    'we_accept' => 'We accept cash and credit cards.',
+    'cash_will_be' => 'Cash will be only by VND.',
+    'credit_cards_accepted' => 'Credit cards accepted are: Master Card, Visa, JCB, UnionPay',
 ];

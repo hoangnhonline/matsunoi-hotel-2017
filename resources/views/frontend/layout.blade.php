@@ -50,7 +50,7 @@
 	@yield('content')
 
 	@include('frontend.partials.footer')
-
+	@include('frontend.partials.modal')
 	<a id="return-to-top" class="td-scroll-up" href="javascript:void(0)">
   		<i class="fa fa-angle-up" aria-hidden="true"></i>
 	</a><!-- return to top -->
