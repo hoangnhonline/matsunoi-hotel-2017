@@ -153,7 +153,7 @@
 									<span class="text">{!! __('text.cash_will_be') !!}</span>
 								</li>
 								<li>
-									<span class="text">{!! __('text.credit_cards_accepted') !!} <img src="{{ URL::asset('public/assets/images/visa_mastercard_jcblogo.jpg') }}" alt="Master Card" style="display: inline-block;"></span>
+									<span class="text">{!! __('text.credit_cards_accepted') !!} <img src="{{ URL::asset('public/assets/images/visa_mastercard_jcblogo.jpg') }}" alt="Master Card" style="display: inline-block;">&nbsp;<img src="{{ URL::asset('public/assets/images/unionpay.jpg') }}" alt="UnionPay" style="display: inline-block;"></span>
 								</li>
 							</ul>
 						</div>
