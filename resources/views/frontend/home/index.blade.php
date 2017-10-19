@@ -7,7 +7,7 @@
 	<div class="container">
 		<div class="block-btn-fix">
 			<div class="block-content fixed-res">
-				<a class="btn btn-reservation btn-1e" href="javascript:;" data-toggle="modal" data-target="#ModalSusscess">{!! __('text.reservation') !!}</a><!-- Btn Reservation -->
+				<a class="btn btn-reservation btn-1e" target="_blank" href="https://ezhotel.vn/BookingSite/behotel?id=1001">{!! __('text.reservation') !!}</a><!-- Btn Reservation -->
 				<!-- <a class="btn btn-reservation btn-1e" href="#" data-toggle="modal" data-target="#ModalreCheck">Demo Recheck</a> --><!-- Btn Reservation -->
 			</div>
 		</div><!-- block-btn-fix -->
@@ -93,7 +93,7 @@
 											<li>Đảm bảo hoàn tiền</li>
 											<li>Đảm bảo giá tốt nhất!</li>
 										</ul>-->
-										<a href="#" title="Book Now" class="btn btn-booknow btn-1e">{!! __('text.book_now') !!}</a>
+										<a target="_blank" href="https://ezhotel.vn/BookingSite/behotel?id=1001&locale={{ ($locale == "jp" || $locale == "en") ? "en_EN" : "vi_VN" }}" title="Book Now" class="btn btn-booknow btn-1e">{!! __('text.book_now') !!}</a>
 									</div><!-- /description -->
 								</div>
 							</div><!-- /item-->
@@ -112,7 +112,7 @@
 											<span class="value">70 USD</span>
 											<span class="per">/ {!! __('text.per_night') !!}</span>
 										</div>											
-										<a href="#" title="Out Of Room" class="btn btn-booknow btn-1e">{!! __('text.book_now') !!}</a>
+										<a target="_blank" href="https://ezhotel.vn/BookingSite/behotel?id=1001&locale={{ ($locale == "jp" || $locale == "en") ? "en_EN" : "vi_VN" }}" title="Out Of Room" class="btn btn-booknow btn-1e">{!! __('text.book_now') !!}</a>
 									</div><!-- /description -->
 								</div>
 							</div><!-- /item-->
@@ -131,7 +131,7 @@
 											<span class="value">70 USD</span>
 											<span class="per">/ {!! __('text.per_night') !!}</span>
 										</div>											
-										<a href="#" title="Out Of Room" class="btn btn-booknow btn-le">{!! __('text.book_now') !!}</a>
+										<a target="_blank" href="https://ezhotel.vn/BookingSite/behotel?id=1001&locale={{ ($locale == "jp" || $locale == "en") ? "en_EN" : "vi_VN" }}" title="Out Of Room" class="btn btn-booknow btn-le">{!! __('text.book_now') !!}</a>
 									</div><!-- /description -->
 								</div>
 							</div>

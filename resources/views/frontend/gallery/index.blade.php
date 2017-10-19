@@ -8,7 +8,7 @@
 			<div class="col-sm-6 col-sm-push-6">
 				<div class="block-btn-fix">
 					<div class="block-content fixed-res">
-						<a class="btn btn-reservation btn-1e" href="#" data-toggle="modal" data-target="#ModalSusscess">{!! __('text.reservation') !!}</a>
+						<a class="btn btn-reservation btn-1e" target="_blank" href="https://ezhotel.vn/BookingSite/behotel?id=1001">{!! __('text.reservation') !!}</a>
 					</div>
 				</div><!-- block-btn-fix -->
 			</div><!-- col-sm-6 -->
