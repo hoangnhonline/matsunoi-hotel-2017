@@ -43,5 +43,5 @@ return [
     'catching' => 'Catching a taxi',
     'we_accept' => 'Chúng tôi chấp nhận thanh toán với các phương thức sau:',
     'cash_will_be' => 'Tiền mặt VND. Không nhận ngoại tệ',
-    'credit_cards_accepted' => 'Các loại thẻ được chấp nhận: Master Card, Visa, JCB, UnionPay',
+    'credit_cards_accepted' => 'Các loại thẻ được chấp nhận: ',
 ];
