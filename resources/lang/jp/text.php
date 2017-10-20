@@ -43,5 +43,5 @@ return [
     'catching' => 'タクシー乗車方法',
     'we_accept' => 'クレジットカードがご利用いただけます。',
     'cash_will_be' => '現金でのお支払いはベトナムドンで承ります。',
-    'credit_cards_accepted' => '利用可能なクレジットカード　　マーク表示',
+    'credit_cards_accepted' => '利用可能なクレジットカード　　',
 ];

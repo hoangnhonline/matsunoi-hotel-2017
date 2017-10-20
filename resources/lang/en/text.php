@@ -43,5 +43,5 @@ return [
     'catching' => 'Catching a taxi',
     'we_accept' => 'We accept cash and credit cards.',
     'cash_will_be' => 'Cash will be only by VND.',
-    'credit_cards_accepted' => 'Credit cards accepted are: Master Card, Visa, JCB, UnionPay',
+    'credit_cards_accepted' => 'Credit cards accepted are: ',
 ];
