@@ -10,7 +10,7 @@ return [
     'hotel_information' => 'ホテル情報',
     'access' => 'アクセス',
     'view_detail' => '詳細',
-    'special_offers' => '特典',
+    'special_offers' => '宿泊金額',
     'per_night' => '一泊',
     'book_now' => 'ご予約',
     'out_of_room' => '満室',
