@@ -79,34 +79,28 @@
 							<div class="item">
 								<div class="item-content">
 									<div class="image">										
-										<img src="{{ URL::asset('public/assets/images/room/room1.jpg') }}" alt="The title of this hotel room suit">
+										<img src="{{ URL::asset('public/assets/images/room/room1.jpg') }}" alt="STANDARD">
 									</div><!-- /image -->
 									<div class="description">
 										<h2 class="name">
-											<a href="The title of this hotel room suit" title="">STANDARD</a>
+											STANDARD
 										</h2>
 										<div class="price">
 											<span class="value">60 USD</span>
 											<span class="per">/ {!! __('text.per_night') !!}</span>
 										</div>
-										<!--<ul class="info">
-											<li>Đảm bảo hoàn tiền</li>
-											<li>Đảm bảo giá tốt nhất!</li>
-										</ul>-->
 										<a target="_blank" href="https://ezhotel.vn/BookingSite/behotel?id=1001&locale={{ ($locale == "jp" || $locale == "en") ? "en_EN" : "vi_VN" }}" title="Book Now" class="btn btn-booknow btn-1e">{!! __('text.book_now') !!}</a>
 									</div><!-- /description -->
 								</div>
 							</div><!-- /item-->
 							<div class="item">
 								<div class="item-content">
-									<div class="image">
-										<a href="detail.html" title="The title of this hotel room suit">
-											<img src="{{ URL::asset('public/assets/images/room/room2.jpg') }}" alt="The title of this hotel room suit">
-										</a>
+									<div class="image">										
+										<img src="{{ URL::asset('public/assets/images/room/room2.jpg') }}" alt="TWIN">										
 									</div><!-- /image -->
 									<div class="description">
 										<h2 class="name">
-											<a href="The title of this hotel room suit" title="">TWIN</a>
+											TWIN
 										</h2>
 										<div class="price">
 											<span class="value">70 USD</span>
@@ -118,14 +112,12 @@
 							</div><!-- /item-->
 							<div class="item">
 								<div class="item-content">
-									<div class="image">
-										<a href="detail.html" title="SUPERIOR">
-											<img src="{{ URL::asset('public/assets/images/room/room3.jpg') }}" alt="SUPERIOR">
-										</a>
+									<div class="image">										
+										<img src="{{ URL::asset('public/assets/images/room/room3.jpg') }}" alt="SUPERIOR">									
 									</div><!-- /image -->
 									<div class="description">
 										<h2 class="name">
-											<a href="SUPERIOR" title="SUPERIOR">SUPERIOR</a>
+											SUPERIOR
 										</h2>
 										<div class="price">
 											<span class="value">70 USD</span>
