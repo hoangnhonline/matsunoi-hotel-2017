@@ -21,7 +21,7 @@ class UserController extends Controller
     {        
         if(Auth::check()){
 
-            return redirect()->route('product.index');
+            return redirect()->route('services.index');
             
         } 
         return view('backend.login');
@@ -52,7 +52,7 @@ class UserController extends Controller
         if (Auth::validate($dataArr)) {
             $dataArr['status'] = 1;
             if (Auth::attempt($dataArr)) {                    
-                return redirect()->route('product.index'); 
+                return redirect()->route('services.index'); 
             }else{
                 Session::flash('error', 'Tài khoản đã bị khóa.'); 
                 return redirect()->route('backend.login-form'); 

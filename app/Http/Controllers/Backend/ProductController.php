@@ -72,7 +72,7 @@ class ProductController extends Controller
             $cateList = (object) [];
         }
 
-        return view('backend.product.index', compact( 'items', 'arrSearch', 'cateList'));        
+        return view('backend.services.index', compact( 'items', 'arrSearch', 'cateList'));        
     }
    
     public function ajaxGetTienIch(Request $request){
@@ -91,7 +91,7 @@ class ProductController extends Controller
         }
         Session::flash('message', 'Cập nhật thứ tự tin HOT thành công');
 
-        return redirect()->route('product.index', ['is_hot' => 1]);
+        return redirect()->route('services.index', ['is_hot' => 1]);
     }
     public function ajaxSearch(Request $request){    
         $search_type = $request->search_type;        
@@ -195,7 +195,7 @@ class ProductController extends Controller
 
         Session::flash('message', 'Tạo mới thành công');
 
-        return redirect()->route('product.index', ['parent_id' => $dataArr['parent_id'], 'cate_id' => $dataArr['cate_id']]);
+        return redirect()->route('services.index', ['parent_id' => $dataArr['parent_id'], 'cate_id' => $dataArr['cate_id']]);
     }
     private function processRelation($dataArr, $object_id, $type = 'add'){
     
