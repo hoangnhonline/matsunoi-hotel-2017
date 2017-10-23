@@ -7,7 +7,7 @@
 	<div class="container">
 		<div class="block-btn-fix">
 			<div class="block-content fixed-res">
-				<a class="btn btn-reservation btn-1e" target="_blank" href="https://ezhotel.vn/BookingSite/behotel?id=1001">{!! __('text.reservation') !!}</a><!-- Btn Reservation -->
+				<a class="btn btn-reservation btn-1e" target="_blank" href="https://ezhotel.vn/BookingSite/behotel?id=1001&locale={{ ($locale == "jp" || $locale == "en") ? "en_EN" : "vi_VN" }}">{!! __('text.reservation') !!}</a><!-- Btn Reservation -->
 				<!-- <a class="btn btn-reservation btn-1e" href="#" data-toggle="modal" data-target="#ModalreCheck">Demo Recheck</a> --><!-- Btn Reservation -->
 			</div>
 		</div><!-- block-btn-fix -->
