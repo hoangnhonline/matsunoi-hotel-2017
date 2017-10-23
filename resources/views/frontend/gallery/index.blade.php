@@ -24,7 +24,15 @@
 			</div><!-- col-sm-6 -->
 			<div class="col-sm-9 col-sm-push-3 main-content">
 				<div class="content">
-					<div class="block-gallary">
+					<div class="block-gallary" style="text-align: center;">
+                        @if($locale == "jp")
+                        <p>更新中...</p>
+                        @elseif( $locale == "en" )
+                        <p>Updating..</p>
+                        @else
+                        <p>Đang cập nhật...</p>
+                        @endif
+                        <!--
                         <div class="bxslider">
                             <div class="item">
                             	<a href="{{ URL::asset('public/assets/images/gallary/large.jpg') }}" data-lightbox="roadtrip">
@@ -77,6 +85,7 @@
                                 </a>
                             </div>
                         </div><!-- /bxslider -->
+                        <!--
                         <div class="gallary-thumb">
                             <div id="gallery_01" class="thumb-img">
                                 <div class="item">
@@ -173,6 +182,7 @@
 							</h2>
 						</div>
 						<div class="box-content">
+                            <!--
 							<ul>
 								<li><a href="#" title="HOTEL ROOMS" class="active">HOTEL ROOMS</a></li>
 								<li><a href="#" title="HOTEL ROOMS">SERVICES</a></li>
@@ -187,6 +197,7 @@
 								<li><a href="#" title="HOTEL ROOMS">VACATIONS</a></li>
 								<li><a href="#" title="HOTEL ROOMS">OUTDOOR VIEWS</a></li>
 							</ul>
+                        -->
 						</div>
 					</div><!-- box-link -->
 				</div>
