@@ -947,7 +947,7 @@ header .header-top {
 }
 .block-services .list-services .item .name span {
   display: block;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 /* Block Check Info
