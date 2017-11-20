@@ -255,10 +255,10 @@
 						</div>
 						<div class="box-content">                            
 							<ul id="gallary-list">
-								<li><a href="javascript:;" data-img="standard" title="STANDARD" class="active">STANDARD</a></li>
-								<li><a href="javascript:;" data-img="superior" title="SUPERIOR">SUPERIOR</a></li>
-                                <li><a href="javascript:;" data-img="deluxe" title="DELUXE">DELUXE</a></li>
-                                <li><a href="javascript:;" data-img="twin" title="TWIN">TWIN</a></li>
+								<li><a href="javascript:;" data-img="standard" data-index="0" title="STANDARD" class="active">STANDARD</a></li>
+								<li><a href="javascript:;" data-img="superior"  data-index="4" title="SUPERIOR">SUPERIOR</a></li>
+                                <li><a href="javascript:;" data-img="deluxe"  data-index="8" title="DELUXE">DELUXE</a></li>
+                                <li><a href="javascript:;" data-img="twin" data-index="13" title="TWIN">TWIN</a></li>
 							</ul>                        
 						</div>
 					</div><!-- box-link -->
@@ -298,6 +298,7 @@
         });
 
         myThumbSlider = $(".thumb-img").bxSlider({
+            auto: true,
             slideMargin: 20,
             maxSlides: 6,
             pager: false,
@@ -314,6 +315,7 @@
             $(this).addClass('active');
             $('.bxslider .item, #gallery_01 .item').hide();
             $('.bxslider .item.' + $(this).data('img') + ', #gallery_01 .item.' +  $(this).data('img')).show();
+            $('a[data-slide-index="' + $(this).data('index')+'"').click();
             mySlider.reloadShow();
             myThumbSlider.reloadShow();
         });
