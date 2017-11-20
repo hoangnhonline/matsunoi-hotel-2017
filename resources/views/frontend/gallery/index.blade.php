@@ -216,6 +216,37 @@
                                     <img src="{{ URL::asset('public/assets/images/gallary/large/lobby/lobby-13.jpg') }}" alt="#" />
                                 </a>
                             </div>
+
+                             <div class="item outside">
+                                <a href="{{ URL::asset('public/assets/images/gallary/large/outside/outside-1.jpg') }}" data-lightbox="roadtrip">
+                                    <img src="{{ URL::asset('public/assets/images/gallary/large/outside/outside-1.jpg') }}" alt="#" />
+                                </a>
+                            </div>
+                            <div class="item outside">
+                                <a href="{{ URL::asset('public/assets/images/gallary/large/outside/outside-2.jpg') }}" data-lightbox="roadtrip">
+                                    <img src="{{ URL::asset('public/assets/images/gallary/large/outside/outside-2.jpg') }}" alt="#" />
+                                </a>
+                            </div>
+                            <div class="item outside">
+                                <a href="{{ URL::asset('public/assets/images/gallary/large/outside/outside-3.jpg') }}" data-lightbox="roadtrip">
+                                    <img src="{{ URL::asset('public/assets/images/gallary/large/outside/outside-3.jpg') }}" alt="#" />
+                                </a>
+                            </div>
+                            <div class="item outside">
+                                <a href="{{ URL::asset('public/assets/images/gallary/large/outside/outside-4.jpg') }}" data-lightbox="roadtrip">
+                                    <img src="{{ URL::asset('public/assets/images/gallary/large/outside/outside-4.jpg') }}" alt="#" />
+                                </a>
+                            </div>
+                            <div class="item outside">
+                                <a href="{{ URL::asset('public/assets/images/gallary/large/outside/outside-5.jpg') }}" data-lightbox="roadtrip">
+                                    <img src="{{ URL::asset('public/assets/images/gallary/large/outside/outside-5.jpg') }}" alt="#" />
+                                </a>
+                            </div>
+                            <div class="item outside">
+                                <a href="{{ URL::asset('public/assets/images/gallary/large/outside/outside-6.jpg') }}" data-lightbox="roadtrip">
+                                    <img src="{{ URL::asset('public/assets/images/gallary/large/outside/outside-6.jpg') }}" alt="#" />
+                                </a>
+                            </div>
                         </div><!-- /bxslider -->
                         
                         <div class="gallary-thumb">
@@ -410,6 +441,39 @@
                                         <img src="{{ URL::asset('public/assets/images/gallary/thumb/lobby/lobby-13.jpg') }}" alt="#" />
                                     </a>
                                 </div>
+
+
+                                <div class="item outside">
+                                    <a href="#" data-slide-index="36">
+                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/outside/outside-1.jpg') }}" alt="#" />
+                                    </a>
+                                </div>     
+
+                                <div class="item outside">
+                                    <a href="#" data-slide-index="37">
+                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/outside/outside-2.jpg') }}" alt="#" />
+                                    </a>
+                                </div>
+                                <div class="item outside">
+                                    <a href="#" data-slide-index="38">
+                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/outside/outside-3.jpg') }}" alt="#" />
+                                    </a>
+                                </div>
+                                <div class="item outside">
+                                    <a href="#" data-slide-index="39">
+                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/outside/outside-4.jpg') }}" alt="#" />
+                                    </a>
+                                </div>
+                                <div class="item outside">
+                                    <a href="#" data-slide-index="40">
+                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/outside/outside-5.jpg') }}" alt="#" />
+                                    </a>
+                                </div>
+                                <div class="item outside">
+                                    <a href="#" data-slide-index="41">
+                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/restaurant/outside-6.jpg') }}" alt="#" />
+                                    </a>
+                                </div>
                             </div>
                         </div><!-- /gallary-thumb -->
 					</div><!-- /block-gallary" -->
@@ -462,7 +526,7 @@
 
                                 <li><a href="javascript:;" data-img="restaurant" data-index="17" title="RESTAURANT">RESTAURANT</a></li>
                                 <li><a href="javascript:;" data-img="lobby" data-index="23" title="LOBBY">LOBBY</a></li>
-                                <li><a href="javascript:;" data-img="outside" data-index="13" title="OUTSIDE">OUTSIDE</a></li>                                
+                                <li><a href="javascript:;" data-img="outside" data-index="36" title="OUTSIDE">OUTSIDE</a></li>                                
 							</ul>                        
 						</div>
 					</div><!-- box-link -->
