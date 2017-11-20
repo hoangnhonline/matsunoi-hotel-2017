@@ -139,13 +139,81 @@
                                 </a>
                             </div>
                             <div class="item restaurant">
-                                <a href="{{ URL::asset('public/assets/images/gallary/large/restaurant/restaurant-5jpg') }}" data-lightbox="roadtrip">
+                                <a href="{{ URL::asset('public/assets/images/gallary/large/restaurant/restaurant-5.jpg') }}" data-lightbox="roadtrip">
                                     <img src="{{ URL::asset('public/assets/images/gallary/large/restaurant/restaurant-5.jpg') }}" alt="#" />
                                 </a>
                             </div>
                             <div class="item restaurant">
                                 <a href="{{ URL::asset('public/assets/images/gallary/large/restaurant/restaurant-6.jpg') }}" data-lightbox="roadtrip">
                                     <img src="{{ URL::asset('public/assets/images/gallary/large/restaurant/restaurant-6.jpg') }}" alt="#" />
+                                </a>
+                            </div>
+                            <!--lobby-->
+                            <div class="item lobby">
+                                <a href="{{ URL::asset('public/assets/images/gallary/large/lobby/lobby-1.jpg') }}" data-lightbox="roadtrip">
+                                    <img src="{{ URL::asset('public/assets/images/gallary/large/lobby/lobby-1.jpg') }}" alt="#" />
+                                </a>
+                            </div>
+                            <div class="item lobby">
+                                <a href="{{ URL::asset('public/assets/images/gallary/large/lobby/lobby-2.jpg') }}" data-lightbox="roadtrip">
+                                    <img src="{{ URL::asset('public/assets/images/gallary/large/lobby/lobby-2.jpg') }}" alt="#" />
+                                </a>
+                            </div>
+                            <div class="item lobby">
+                                <a href="{{ URL::asset('public/assets/images/gallary/large/lobby/lobby-3.jpg') }}" data-lightbox="roadtrip">
+                                    <img src="{{ URL::asset('public/assets/images/gallary/large/lobby/lobby-3.jpg') }}" alt="#" />
+                                </a>
+                            </div>
+                            <div class="item lobby">
+                                <a href="{{ URL::asset('public/assets/images/gallary/large/lobby/lobby-4.jpg') }}" data-lightbox="roadtrip">
+                                    <img src="{{ URL::asset('public/assets/images/gallary/large/lobby/lobby-4.jpg') }}" alt="#" />
+                                </a>
+                            </div>
+                            <div class="item lobby">
+                                <a href="{{ URL::asset('public/assets/images/gallary/large/lobby/lobby-5jpg') }}" data-lightbox="roadtrip">
+                                    <img src="{{ URL::asset('public/assets/images/gallary/large/lobby/lobby-5.jpg') }}" alt="#" />
+                                </a>
+                            </div>
+                            <div class="item lobby">
+                                <a href="{{ URL::asset('public/assets/images/gallary/large/lobby/lobby-6.jpg') }}" data-lightbox="roadtrip">
+                                    <img src="{{ URL::asset('public/assets/images/gallary/large/lobby/lobby-6.jpg') }}" alt="#" />
+                                </a>
+                            </div>
+
+
+                             <div class="item lobby">
+                                <a href="{{ URL::asset('public/assets/images/gallary/large/lobby/lobby-7.jpg') }}" data-lightbox="roadtrip">
+                                    <img src="{{ URL::asset('public/assets/images/gallary/large/lobby/lobby-7.jpg') }}" alt="#" />
+                                </a>
+                            </div>
+                            <div class="item lobby">
+                                <a href="{{ URL::asset('public/assets/images/gallary/large/lobby/lobby-8.jpg') }}" data-lightbox="roadtrip">
+                                    <img src="{{ URL::asset('public/assets/images/gallary/large/lobby/lobby-8.jpg') }}" alt="#" />
+                                </a>
+                            </div>
+                            <div class="item lobby">
+                                <a href="{{ URL::asset('public/assets/images/gallary/large/lobby/lobby-9.jpg') }}" data-lightbox="roadtrip">
+                                    <img src="{{ URL::asset('public/assets/images/gallary/large/lobby/lobby-9.jpg') }}" alt="#" />
+                                </a>
+                            </div>
+                            <div class="item lobby">
+                                <a href="{{ URL::asset('public/assets/images/gallary/large/lobby/lobby-10.jpg') }}" data-lightbox="roadtrip">
+                                    <img src="{{ URL::asset('public/assets/images/gallary/large/lobby/lobby-10.jpg') }}" alt="#" />
+                                </a>
+                            </div>
+                            <div class="item lobby">
+                                <a href="{{ URL::asset('public/assets/images/gallary/large/lobby/lobby-11.jpg') }}" data-lightbox="roadtrip">
+                                    <img src="{{ URL::asset('public/assets/images/gallary/large/lobby/lobby-11.jpg') }}" alt="#" />
+                                </a>
+                            </div>
+                            <div class="item lobby">
+                                <a href="{{ URL::asset('public/assets/images/gallary/large/lobby/lobby-12.jpg') }}" data-lightbox="roadtrip">
+                                    <img src="{{ URL::asset('public/assets/images/gallary/large/lobby/lobby-12.jpg') }}" alt="#" />
+                                </a>
+                            </div>
+                            <div class="item lobby">
+                                <a href="{{ URL::asset('public/assets/images/gallary/large/lobby/lobby-13.jpg') }}" data-lightbox="roadtrip">
+                                    <img src="{{ URL::asset('public/assets/images/gallary/large/lobby/lobby-13.jpg') }}" alt="#" />
                                 </a>
                             </div>
                         </div><!-- /bxslider -->
@@ -273,6 +341,75 @@
                                         <img src="{{ URL::asset('public/assets/images/gallary/thumb/restaurant/restaurant-6.jpg') }}" alt="#" />
                                     </a>
                                 </div>
+                                <!--lobby-->
+                                <div class="item lobby">
+                                    <a href="#" data-slide-index="23">
+                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/lobby/lobby-1.jpg') }}" alt="#" />
+                                    </a>
+                                </div>     
+
+                                <div class="item lobby">
+                                    <a href="#" data-slide-index="24">
+                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/lobby/lobby-2.jpg') }}" alt="#" />
+                                    </a>
+                                </div>
+                                <div class="item lobby">
+                                    <a href="#" data-slide-index="25">
+                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/lobby/lobby-3.jpg') }}" alt="#" />
+                                    </a>
+                                </div>
+                                <div class="item lobby">
+                                    <a href="#" data-slide-index="26">
+                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/lobby/lobby-4.jpg') }}" alt="#" />
+                                    </a>
+                                </div>
+                                <div class="item lobby">
+                                    <a href="#" data-slide-index="27">
+                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/lobby/lobby-5.jpg') }}" alt="#" />
+                                    </a>
+                                </div>
+                                <div class="item lobby">
+                                    <a href="#" data-slide-index="28">
+                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/lobby/lobby-6.jpg') }}" alt="#" />
+                                    </a>
+                                </div>
+
+                                <div class="item lobby">
+                                    <a href="#" data-slide-index="29">
+                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/lobby/lobby-7.jpg') }}" alt="#" />
+                                    </a>
+                                </div>     
+
+                                <div class="item lobby">
+                                    <a href="#" data-slide-index="30">
+                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/lobby/lobby-8.jpg') }}" alt="#" />
+                                    </a>
+                                </div>
+                                <div class="item lobby">
+                                    <a href="#" data-slide-index="31">
+                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/lobby/lobby-9.jpg') }}" alt="#" />
+                                    </a>
+                                </div>
+                                <div class="item lobby">
+                                    <a href="#" data-slide-index="32">
+                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/lobby/lobby-10.jpg') }}" alt="#" />
+                                    </a>
+                                </div>
+                                <div class="item lobby">
+                                    <a href="#" data-slide-index="33">
+                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/lobby/lobby-11.jpg') }}" alt="#" />
+                                    </a>
+                                </div>
+                                <div class="item lobby">
+                                    <a href="#" data-slide-index="34">
+                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/lobby/lobby-12.jpg') }}" alt="#" />
+                                    </a>
+                                </div>
+                                <div class="item lobby">
+                                    <a href="#" data-slide-index="35">
+                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/lobby/lobby-13.jpg') }}" alt="#" />
+                                    </a>
+                                </div>
                             </div>
                         </div><!-- /gallary-thumb -->
 					</div><!-- /block-gallary" -->
@@ -324,7 +461,7 @@
                                 <li><a href="javascript:;" data-img="twin" data-index="13" title="TWIN">TWIN</a></li>
 
                                 <li><a href="javascript:;" data-img="restaurant" data-index="17" title="RESTAURANT">RESTAURANT</a></li>
-                                <li><a href="javascript:;" data-img="lobby" data-index="13" title="LOBBY">LOBBY</a></li>
+                                <li><a href="javascript:;" data-img="lobby" data-index="23" title="LOBBY">LOBBY</a></li>
                                 <li><a href="javascript:;" data-img="outside" data-index="13" title="OUTSIDE">OUTSIDE</a></li>                                
 							</ul>                        
 						</div>
