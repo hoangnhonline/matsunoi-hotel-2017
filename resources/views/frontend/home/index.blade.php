@@ -79,15 +79,23 @@
 							<div class="item">
 								<div class="item-content">
 									<div class="image">										
-										<img src="{{ URL::asset('public/assets/images/room/room1.jpg') }}" alt="STANDARD">
+										<img src="{{ URL::asset('public/assets/images/room/standard.jpg') }}" alt="STANDARD">
 									</div><!-- /image -->
 									<div class="description">
 										<h2 class="name">
 											STANDARD
 										</h2>
 										<div class="price">
-											<span class="value">60 USD</span>
+											<span class="value">55 USD</span>
 											<span class="per">/ {!! __('text.per_night') !!}</span>
+											<br>
+											@if($locale == "en")
+											<strong style="color:red;font-style:italic"><i class="fa fa-star"></i>Grand opening 10% discount</strong>
+											@elseif($locale == 'jp')
+											<strong style="color:red;font-style:italic"><i class="fa fa-star"></i>グランドオープン10％割引</strong>
+											@else
+											<strong style="color:red;font-style:italic"><i class="fa fa-star"></i>Mừng khai trương giảm 10%</strong>
+											@endif
 										</div>
 										<a target="_blank" href="https://ezhotel.vn/BookingSite/behotel?id=1001&locale={{ ($locale == "jp" || $locale == "en") ? "en_EN" : "vi_VN" }}" title="Book Now" class="btn btn-booknow btn-1e">{!! __('text.book_now') !!}</a>
 									</div><!-- /description -->
@@ -96,7 +104,57 @@
 							<div class="item">
 								<div class="item-content">
 									<div class="image">										
-										<img src="{{ URL::asset('public/assets/images/room/room2.jpg') }}" alt="TWIN">										
+										<img src="{{ URL::asset('public/assets/images/room/superior.jpg') }}" alt="SUPERIOR">									
+									</div><!-- /image -->
+									<div class="description">
+										<h2 class="name">
+											SUPERIOR
+										</h2>
+										<div class="price">
+											<span class="value">60 USD</span>
+											<span class="per">/ {!! __('text.per_night') !!}</span>
+											<br>
+											@if($locale == "en")
+											<strong style="color:red;font-style:italic"><i class="fa fa-star"></i>Grand opening 10% discount</strong>
+											@elseif($locale == 'jp')
+											<strong style="color:red;font-style:italic"><i class="fa fa-star"></i>グランドオープン10％割引</strong>
+											@else
+											<strong style="color:red;font-style:italic"><i class="fa fa-star"></i>Mừng khai trương giảm 10%</strong>
+											@endif
+										</div>											
+										<a target="_blank" href="https://ezhotel.vn/BookingSite/behotel?id=1001&locale={{ ($locale == "jp" || $locale == "en") ? "en_EN" : "vi_VN" }}" title="Out Of Room" class="btn btn-booknow btn-le">{!! __('text.book_now') !!}</a>
+									</div><!-- /description -->
+								</div>
+							</div>
+							<div class="item">
+								<div class="item-content">
+									<div class="image">										
+										<img src="{{ URL::asset('public/assets/images/room/deluxe.jpg') }}" alt="DELUXE">
+									</div><!-- /image -->
+									<div class="description">
+										<h2 class="name">
+											DELUXE
+										</h2>
+										<div class="price">
+											<span class="value">70 USD</span>
+											<span class="per">/ {!! __('text.per_night') !!}</span>
+											<br>
+											@if($locale == "en")
+											<strong style="color:red;font-style:italic"><i class="fa fa-star"></i>Grand opening 10% discount</strong>
+											@elseif($locale == 'jp')
+											<strong style="color:red;font-style:italic"><i class="fa fa-star"></i>グランドオープン10％割引</strong>
+											@else
+											<strong style="color:red;font-style:italic"><i class="fa fa-star"></i>Mừng khai trương giảm 10%</strong>
+											@endif
+										</div>
+										<a target="_blank" href="https://ezhotel.vn/BookingSite/behotel?id=1001&locale={{ ($locale == "jp" || $locale == "en") ? "en_EN" : "vi_VN" }}" title="Book Now" class="btn btn-booknow btn-1e">{!! __('text.book_now') !!}</a>
+									</div><!-- /description -->
+								</div>
+							</div><!-- /item-->
+							<div class="item">
+								<div class="item-content">
+									<div class="image">										
+										<img src="{{ URL::asset('public/assets/images/room/twin.jpg') }}" alt="TWIN">										
 									</div><!-- /image -->
 									<div class="description">
 										<h2 class="name">
@@ -105,28 +163,20 @@
 										<div class="price">
 											<span class="value">70 USD</span>
 											<span class="per">/ {!! __('text.per_night') !!}</span>
+											<br>
+											@if($locale == "en")
+											<strong style="color:red;font-style:italic"><i class="fa fa-star"></i>Grand opening 10% discount</strong>
+											@elseif($locale == 'jp')
+											<strong style="color:red;font-style:italic"><i class="fa fa-star"></i>グランドオープン10％割引</strong>
+											@else
+											<strong style="color:red;font-style:italic"><i class="fa fa-star"></i>Mừng khai trương giảm 10%</strong>
+											@endif
 										</div>											
 										<a target="_blank" href="https://ezhotel.vn/BookingSite/behotel?id=1001&locale={{ ($locale == "jp" || $locale == "en") ? "en_EN" : "vi_VN" }}" title="Out Of Room" class="btn btn-booknow btn-1e">{!! __('text.book_now') !!}</a>
 									</div><!-- /description -->
 								</div>
 							</div><!-- /item-->
-							<div class="item">
-								<div class="item-content">
-									<div class="image">										
-										<img src="{{ URL::asset('public/assets/images/room/room3.jpg') }}" alt="SUPERIOR">									
-									</div><!-- /image -->
-									<div class="description">
-										<h2 class="name">
-											SUPERIOR
-										</h2>
-										<div class="price">
-											<span class="value">70 USD</span>
-											<span class="per">/ {!! __('text.per_night') !!}</span>
-										</div>											
-										<a target="_blank" href="https://ezhotel.vn/BookingSite/behotel?id=1001&locale={{ ($locale == "jp" || $locale == "en") ? "en_EN" : "vi_VN" }}" title="Out Of Room" class="btn btn-booknow btn-le">{!! __('text.book_now') !!}</a>
-									</div><!-- /description -->
-								</div>
-							</div>
+							
 						</div>
 					</div><!-- block-product -->
 					<div class="block block-noted">
