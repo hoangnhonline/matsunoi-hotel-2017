@@ -27,121 +27,189 @@
 					<div class="block-gallary" style="text-align: center;">
                         
                         <div class="bxslider">
-                            <div class="item">
-                            	<a href="{{ URL::asset('public/assets/images/gallary/large/1.jpg') }}" data-lightbox="roadtrip">
-                                	<img src="{{ URL::asset('public/assets/images/gallary/large/1.jpg') }}" alt="#" />
+                            <div class="item standard">
+                            	<a href="{{ URL::asset('public/assets/images/gallary/large/standard/standard-1.jpg') }}" data-lightbox="roadtrip">
+                                	<img src="{{ URL::asset('public/assets/images/gallary/large/standard/standard-1.jpg') }}" alt="#" />
                                 </a>
                             </div>
-                            <div class="item">
-                            	<a href="{{ URL::asset('public/assets/images/gallary/large/2.jpg') }}" data-lightbox="roadtrip">
-                                	<img src="{{ URL::asset('public/assets/images/gallary/large/2.jpg') }}" alt="#" />
+                            <div class="item standard">
+                                <a href="{{ URL::asset('public/assets/images/gallary/large/standard/standard-2.jpg') }}" data-lightbox="roadtrip">
+                                    <img src="{{ URL::asset('public/assets/images/gallary/large/standard/standard-2.jpg') }}" alt="#" />
                                 </a>
                             </div>
-                            <div class="item">
-                            	<a href="{{ URL::asset('public/assets/images/gallary/large/3.jpg') }}" data-lightbox="roadtrip">
-                                	<img src="{{ URL::asset('public/assets/images/gallary/large/3.jpg') }}" alt="#" />
+                            <div class="item standard">
+                                <a href="{{ URL::asset('public/assets/images/gallary/large/standard/standard-3.jpg') }}" data-lightbox="roadtrip">
+                                    <img src="{{ URL::asset('public/assets/images/gallary/large/standard/standard-3.jpg') }}" alt="#" />
                                 </a>
                             </div>
-                            <div class="item">
-                            	<a href="{{ URL::asset('public/assets/images/gallary/large/4.jpg') }}" data-lightbox="roadtrip">
-                                	<img src="{{ URL::asset('public/assets/images/gallary/large/4.jpg') }}" alt="#" />
+                            <div class="item standard">
+                                <a href="{{ URL::asset('public/assets/images/gallary/large/standard/standard-4.jpg') }}" data-lightbox="roadtrip">
+                                    <img src="{{ URL::asset('public/assets/images/gallary/large/standard/standard-4.jpg') }}" alt="#" />
                                 </a>
                             </div>
-                            <div class="item">
-                            	<a href="{{ URL::asset('public/assets/images/gallary/large/5.jpg') }}" data-lightbox="roadtrip">
-                                	<img src="{{ URL::asset('public/assets/images/gallary/large/5.jpg') }}" alt="#" />
+
+
+
+                            <div class="item superior">
+                                <a href="{{ URL::asset('public/assets/images/gallary/large/superior/superior-1.jpg') }}" data-lightbox="roadtrip">
+                                    <img src="{{ URL::asset('public/assets/images/gallary/large/superior/superior-1.jpg') }}" alt="#" />
                                 </a>
                             </div>
-                            <div class="item">
-                            	<a href="{{ URL::asset('public/assets/images/gallary/large/6.jpg') }}" data-lightbox="roadtrip">
-                                	<img src="{{ URL::asset('public/assets/images/gallary/large/6.jpg') }}" alt="#" />
+                            <div class="item superior">
+                                <a href="{{ URL::asset('public/assets/images/gallary/large/superior/superior-2.jpg') }}" data-lightbox="roadtrip">
+                                    <img src="{{ URL::asset('public/assets/images/gallary/large/superior/superior-2.jpg') }}" alt="#" />
                                 </a>
                             </div>
-                            <div class="item">
-                            	<a href="{{ URL::asset('public/assets/images/gallary/large/7.jpg') }}" data-lightbox="roadtrip">
-                                	<img src="{{ URL::asset('public/assets/images/gallary/large/7.jpg') }}" alt="#" />
+                            <div class="item superior">
+                                <a href="{{ URL::asset('public/assets/images/gallary/large/superior/superior-3.jpg') }}" data-lightbox="roadtrip">
+                                    <img src="{{ URL::asset('public/assets/images/gallary/large/superior/superior-3.jpg') }}" alt="#" />
                                 </a>
                             </div>
-							<div class="item">
-                            	<a href="{{ URL::asset('public/assets/images/gallary/large/8.jpg') }}" data-lightbox="roadtrip">
-                                	<img src="{{ URL::asset('public/assets/images/gallary/large/8.jpg') }}" alt="#" />
+                            <div class="item superior">
+                                <a href="{{ URL::asset('public/assets/images/gallary/large/superior/superior-4.jpg') }}" data-lightbox="roadtrip">
+                                    <img src="{{ URL::asset('public/assets/images/gallary/large/superior/superior-4.jpg') }}" alt="#" />
                                 </a>
                             </div>
-							<div class="item">
-                            	<a href="{{ URL::asset('public/assets/images/gallary/large/9.jpg') }}" data-lightbox="roadtrip">
-                                	<img src="{{ URL::asset('public/assets/images/gallary/large/9.jpg') }}" alt="#" />
+                            <!--deluxe-->
+                            <div class="item deluxe">
+                                <a href="{{ URL::asset('public/assets/images/gallary/large/deluxe/deluxe-1.jpg') }}" data-lightbox="roadtrip">
+                                    <img src="{{ URL::asset('public/assets/images/gallary/large/deluxe/deluxe-1.jpg') }}" alt="#" />
                                 </a>
                             </div>
-							<div class="item">
-                            	<a href="{{ URL::asset('public/assets/images/gallary/large/10.jpg') }}" data-lightbox="roadtrip">
-                                	<img src="{{ URL::asset('public/assets/images/gallary/large/10.jpg') }}" alt="#" />
+                            <div class="item deluxe">
+                                <a href="{{ URL::asset('public/assets/images/gallary/large/deluxe/deluxe-2.jpg') }}" data-lightbox="roadtrip">
+                                    <img src="{{ URL::asset('public/assets/images/gallary/large/deluxe/deluxe-2.jpg') }}" alt="#" />
                                 </a>
                             </div>
-							<div class="item">
-                            	<a href="{{ URL::asset('public/assets/images/gallary/large/11.jpg') }}" data-lightbox="roadtrip">
-                                	<img src="{{ URL::asset('public/assets/images/gallary/large/11.jpg') }}" alt="#" />
+                            <div class="item deluxe">
+                                <a href="{{ URL::asset('public/assets/images/gallary/large/deluxe/deluxe-3.jpg') }}" data-lightbox="roadtrip">
+                                    <img src="{{ URL::asset('public/assets/images/gallary/large/deluxe/deluxe-3.jpg') }}" alt="#" />
                                 </a>
                             </div>
-                            
+                            <div class="item deluxe">
+                                <a href="{{ URL::asset('public/assets/images/gallary/large/deluxe/deluxe-4.jpg') }}" data-lightbox="roadtrip">
+                                    <img src="{{ URL::asset('public/assets/images/gallary/large/deluxe/deluxe-4.jpg') }}" alt="#" />
+                                </a>
+                            </div>
+                            <div class="item deluxe">
+                                <a href="{{ URL::asset('public/assets/images/gallary/large/deluxe/deluxe-5jpg') }}" data-lightbox="roadtrip">
+                                    <img src="{{ URL::asset('public/assets/images/gallary/large/deluxe/deluxe-5.jpg') }}" alt="#" />
+                                </a>
+                            </div>
+                            <!--twin-->
+                            <div class="item twin">
+                                <a href="{{ URL::asset('public/assets/images/gallary/large/twin/twin-1.jpg') }}" data-lightbox="roadtrip">
+                                    <img src="{{ URL::asset('public/assets/images/gallary/large/twin/twin-1.jpg') }}" alt="#" />
+                                </a>
+                            </div>
+                            <div class="item twin">
+                                <a href="{{ URL::asset('public/assets/images/gallary/large/twin/twin-2.jpg') }}" data-lightbox="roadtrip">
+                                    <img src="{{ URL::asset('public/assets/images/gallary/large/twin/twin-2.jpg') }}" alt="#" />
+                                </a>
+                            </div>
+                            <div class="item twin">
+                                <a href="{{ URL::asset('public/assets/images/gallary/large/twin/twin-3.jpg') }}" data-lightbox="roadtrip">
+                                    <img src="{{ URL::asset('public/assets/images/gallary/large/twin/twin-3.jpg') }}" alt="#" />
+                                </a>
+                            </div>
+                            <div class="item twin">
+                                <a href="{{ URL::asset('public/assets/images/gallary/large/twin/twin-4.jpg') }}" data-lightbox="roadtrip">
+                                    <img src="{{ URL::asset('public/assets/images/gallary/large/twin/twin-4.jpg') }}" alt="#" />
+                                </a>
+                            </div>
                         </div><!-- /bxslider -->
                         
                         <div class="gallary-thumb">
                             <div id="gallery_01" class="thumb-img">
-                                <div class="item">
+                                <div class="item standard">
                                     <a href="#" data-slide-index="0">
-                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/1.jpg') }}" alt="#" />
+                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/standard/standard-1.jpg') }}" alt="#" />
                                     </a>
                                 </div>
-                                <div class="item">
+                                <div class="item standard">
                                     <a href="#" data-slide-index="1">
-                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/2.jpg') }}" alt="#" />
+                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/standard/standard-2.jpg') }}" alt="#" />
                                     </a>
                                 </div>
-                                <div class="item">
+                                <div class="item standard">
                                     <a href="#" data-slide-index="2">
-                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/3.jpg') }}" alt="#" />
+                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/standard/standard-3.jpg') }}" alt="#" />
                                     </a>
                                 </div>
-                                <div class="item">
+                                <div class="item standard">
                                     <a href="#" data-slide-index="3">
-                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/4.jpg') }}" alt="#" />
+                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/standard/standard-4.jpg') }}" alt="#" />
                                     </a>
-                                </div>
-                                <div class="item">
+                                </div>  
+
+
+                                <div class="item superior">
                                     <a href="#" data-slide-index="4">
-                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/5.jpg') }}" alt="#" />
+                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/superior/superior-1.jpg') }}" alt="#" />
                                     </a>
                                 </div>
-                                <div class="item">
+                                <div class="item superior">
                                     <a href="#" data-slide-index="5">
-                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/6.jpg') }}" alt="#" />
+                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/superior/superior-2.jpg') }}" alt="#" />
                                     </a>
                                 </div>
-                                <div class="item">
+                                <div class="item superior">
                                     <a href="#" data-slide-index="6">
-                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/7.jpg') }}" alt="#" />
+                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/superior/superior-3.jpg') }}" alt="#" />
                                     </a>
                                 </div>
-								<div class="item">
+                                <div class="item superior">
                                     <a href="#" data-slide-index="7">
-                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/8.jpg') }}" alt="#" />
+                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/superior/superior-4.jpg') }}" alt="#" />
                                     </a>
-                                </div>                                
-								<div class="item">
+                                </div>  
+
+                                <div class="item deluxe">
                                     <a href="#" data-slide-index="8">
-                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/9.jpg') }}" alt="#" />
+                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/deluxe/deluxe-1.jpg') }}" alt="#" />
                                     </a>
-                                </div>                                
-								<div class="item">
+                                </div>
+                                <div class="item deluxe">
                                     <a href="#" data-slide-index="9">
-                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/10.jpg') }}" alt="#" />
+                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/deluxe/deluxe-2.jpg') }}" alt="#" />
                                     </a>
-                                </div>                                
-								<div class="item">
+                                </div>
+                                <div class="item deluxe">
                                     <a href="#" data-slide-index="10">
-                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/11.jpg') }}" alt="#" />
+                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/deluxe/deluxe-3.jpg') }}" alt="#" />
                                     </a>
-                                </div>                                
+                                </div>
+                                <div class="item deluxe">
+                                    <a href="#" data-slide-index="11">
+                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/deluxe/deluxe-4.jpg') }}" alt="#" />
+                                    </a>
+                                </div>                              
+                                <div class="item deluxe">
+                                    <a href="#" data-slide-index="12">
+                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/deluxe/deluxe-5.jpg') }}" alt="#" />
+                                    </a>
+                                </div>     
+
+                                <div class="item twin">
+                                    <a href="#" data-slide-index="13">
+                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/twin/twin-1.jpg') }}" alt="#" />
+                                    </a>
+                                </div>
+                                <div class="item twin">
+                                    <a href="#" data-slide-index="14">
+                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/twin/twin-2.jpg') }}" alt="#" />
+                                    </a>
+                                </div>
+                                <div class="item twin">
+                                    <a href="#" data-slide-index="15">
+                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/twin/twin-3.jpg') }}" alt="#" />
+                                    </a>
+                                </div>
+                                <div class="item twin">
+                                    <a href="#" data-slide-index="16">
+                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/twin/twin-4.jpg') }}" alt="#" />
+                                    </a>
+                                </div>                          
                             </div>
                         </div><!-- /gallary-thumb -->
 					</div><!-- /block-gallary" -->
@@ -185,23 +253,13 @@
 								ALBUM LIST
 							</h2>
 						</div>
-						<div class="box-content">
-                            <!--
-							<ul>
-								<li><a href="#" title="HOTEL ROOMS" class="active">HOTEL ROOMS</a></li>
-								<li><a href="#" title="HOTEL ROOMS">SERVICES</a></li>
-								<li><a href="#" title="HOTEL ROOMS">HOTEL ROOMS</a></li>
-								<li><a href="#" title="HOTEL ROOMS">STAFFS</a></li>
-								<li><a href="#" title="HOTEL ROOMS">VACATIONS</a></li>
-								<li><a href="#" title="HOTEL ROOMS">OUTDOOR VIEWS</a></li>
-								<li><a href="#" title="HOTEL ROOMS">HOTEL ROOMS</a></li>
-								<li><a href="#" title="HOTEL ROOMS">SERVICES</a></li>
-								<li><a href="#" title="HOTEL ROOMS">HOTEL ROOMS</a></li>
-								<li><a href="#" title="HOTEL ROOMS">STAFFS</a></li>
-								<li><a href="#" title="HOTEL ROOMS">VACATIONS</a></li>
-								<li><a href="#" title="HOTEL ROOMS">OUTDOOR VIEWS</a></li>
-							</ul>
-                        -->
+						<div class="box-content">                            
+							<ul id="gallary-list">
+								<li><a href="javascript:;" data-img="standard" title="STANDARD" class="active">STANDARD</a></li>
+								<li><a href="javascript:;" data-img="superior" title="SUPERIOR">SUPERIOR</a></li>
+                                <li><a href="javascript:;" data-img="deluxe" title="DELUXE">DELUXE</a></li>
+                                <li><a href="javascript:;" data-img="twin" title="TWIN">TWIN</a></li>
+							</ul>                        
 						</div>
 					</div><!-- box-link -->
 				</div>
@@ -216,7 +274,10 @@
 <script src="{{ URL::asset('public/assets/lib/lightbox/js/lightbox.js') }}"></script>
 
 <script>
+    var mySlider;
+    var myThumbSlider;
 	$(document).ready(function () {
+        
     	lightbox.option({
 			'resizeDuration': 700,
 			'wrapAround': true,
@@ -225,7 +286,7 @@
 			'positionFromTop': 50,
 		});
 
-        $(".bxslider").bxSlider({
+        mySlider = $(".bxslider").bxSlider({
         	auto: true,
         	autoHover: true,
         	pause: 3000,
@@ -236,7 +297,7 @@
             mode: 'fade',
         });
 
-        $(".thumb-img").bxSlider({
+        myThumbSlider = $(".thumb-img").bxSlider({
             slideMargin: 20,
             maxSlides: 6,
             pager: false,
@@ -245,6 +306,16 @@
             infiniteLoop: false,
             nextText: '<i class="fa fa-angle-right"></i>',
             prevText: '<i class="fa fa-angle-left"></i>'
+        });
+        $('.bxslider .item, #gallery_01 .item').hide();
+        $('.bxslider .item.standard, #gallery_01 .item.standard').show();
+        $('#gallary-list a').click(function(){
+            $('#gallary-list a').removeClass('active');
+            $(this).addClass('active');
+            $('.bxslider .item, #gallery_01 .item').hide();
+            $('.bxslider .item.' + $(this).data('img') + ', #gallery_01 .item.' +  $(this).data('img')).show();
+            mySlider.reloadShow();
+            myThumbSlider.reloadShow();
         });
     });
 </script>
