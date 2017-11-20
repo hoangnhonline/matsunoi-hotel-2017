@@ -92,7 +92,7 @@
                                 </a>
                             </div>
                             <div class="item deluxe">
-                                <a href="{{ URL::asset('public/assets/images/gallary/large/deluxe/deluxe-5jpg') }}" data-lightbox="roadtrip">
+                                <a href="{{ URL::asset('public/assets/images/gallary/large/deluxe/deluxe-5.jpg') }}" data-lightbox="roadtrip">
                                     <img src="{{ URL::asset('public/assets/images/gallary/large/deluxe/deluxe-5.jpg') }}" alt="#" />
                                 </a>
                             </div>
@@ -115,6 +115,37 @@
                             <div class="item twin">
                                 <a href="{{ URL::asset('public/assets/images/gallary/large/twin/twin-4.jpg') }}" data-lightbox="roadtrip">
                                     <img src="{{ URL::asset('public/assets/images/gallary/large/twin/twin-4.jpg') }}" alt="#" />
+                                </a>
+                            </div>
+                            <!--res-->
+                            <div class="item restaurant">
+                                <a href="{{ URL::asset('public/assets/images/gallary/large/restaurant/restaurant-1.jpg') }}" data-lightbox="roadtrip">
+                                    <img src="{{ URL::asset('public/assets/images/gallary/large/restaurant/restaurant-1.jpg') }}" alt="#" />
+                                </a>
+                            </div>
+                            <div class="item restaurant">
+                                <a href="{{ URL::asset('public/assets/images/gallary/large/restaurant/restaurant-2.jpg') }}" data-lightbox="roadtrip">
+                                    <img src="{{ URL::asset('public/assets/images/gallary/large/restaurant/restaurant-2.jpg') }}" alt="#" />
+                                </a>
+                            </div>
+                            <div class="item restaurant">
+                                <a href="{{ URL::asset('public/assets/images/gallary/large/restaurant/restaurant-3.jpg') }}" data-lightbox="roadtrip">
+                                    <img src="{{ URL::asset('public/assets/images/gallary/large/restaurant/restaurant-3.jpg') }}" alt="#" />
+                                </a>
+                            </div>
+                            <div class="item restaurant">
+                                <a href="{{ URL::asset('public/assets/images/gallary/large/restaurant/restaurant-4.jpg') }}" data-lightbox="roadtrip">
+                                    <img src="{{ URL::asset('public/assets/images/gallary/large/restaurant/restaurant-4.jpg') }}" alt="#" />
+                                </a>
+                            </div>
+                            <div class="item restaurant">
+                                <a href="{{ URL::asset('public/assets/images/gallary/large/restaurant/restaurant-5jpg') }}" data-lightbox="roadtrip">
+                                    <img src="{{ URL::asset('public/assets/images/gallary/large/restaurant/restaurant-5.jpg') }}" alt="#" />
+                                </a>
+                            </div>
+                            <div class="item restaurant">
+                                <a href="{{ URL::asset('public/assets/images/gallary/large/restaurant/restaurant-6.jpg') }}" data-lightbox="roadtrip">
+                                    <img src="{{ URL::asset('public/assets/images/gallary/large/restaurant/restaurant-6.jpg') }}" alt="#" />
                                 </a>
                             </div>
                         </div><!-- /bxslider -->
@@ -209,7 +240,39 @@
                                     <a href="#" data-slide-index="16">
                                         <img src="{{ URL::asset('public/assets/images/gallary/thumb/twin/twin-4.jpg') }}" alt="#" />
                                     </a>
-                                </div>                          
+                                </div>
+                                <!--res-->                          
+                                <div class="item restaurant">
+                                    <a href="#" data-slide-index="17">
+                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/restaurant/restaurant-1.jpg') }}" alt="#" />
+                                    </a>
+                                </div>     
+
+                                <div class="item restaurant">
+                                    <a href="#" data-slide-index="18">
+                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/restaurant/restaurant-2.jpg') }}" alt="#" />
+                                    </a>
+                                </div>
+                                <div class="item restaurant">
+                                    <a href="#" data-slide-index="19">
+                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/restaurant/restaurant-3.jpg') }}" alt="#" />
+                                    </a>
+                                </div>
+                                <div class="item restaurant">
+                                    <a href="#" data-slide-index="20">
+                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/restaurant/restaurant-4.jpg') }}" alt="#" />
+                                    </a>
+                                </div>
+                                <div class="item restaurant">
+                                    <a href="#" data-slide-index="21">
+                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/restaurant/restaurant-5.jpg') }}" alt="#" />
+                                    </a>
+                                </div>
+                                <div class="item restaurant">
+                                    <a href="#" data-slide-index="22">
+                                        <img src="{{ URL::asset('public/assets/images/gallary/thumb/restaurant/restaurant-6.jpg') }}" alt="#" />
+                                    </a>
+                                </div>
                             </div>
                         </div><!-- /gallary-thumb -->
 					</div><!-- /block-gallary" -->
@@ -259,6 +322,10 @@
 								<li><a href="javascript:;" data-img="superior"  data-index="4" title="SUPERIOR">SUPERIOR</a></li>
                                 <li><a href="javascript:;" data-img="deluxe"  data-index="8" title="DELUXE">DELUXE</a></li>
                                 <li><a href="javascript:;" data-img="twin" data-index="13" title="TWIN">TWIN</a></li>
+
+                                <li><a href="javascript:;" data-img="restaurant" data-index="17" title="RESTAURANT">RESTAURANT</a></li>
+                                <li><a href="javascript:;" data-img="lobby" data-index="13" title="LOBBY">LOBBY</a></li>
+                                <li><a href="javascript:;" data-img="outside" data-index="13" title="OUTSIDE">OUTSIDE</a></li>                                
 							</ul>                        
 						</div>
 					</div><!-- box-link -->
