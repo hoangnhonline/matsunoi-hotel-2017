@@ -29,12 +29,7 @@
     <meta name="twitter:title" content="@yield('title')" />     
     <meta name="twitter:image" content="{{ Helper::showImage($socialImage) }}" />
 	<link rel="icon" href="{{ URL::asset('public/assets/favicon.ico') }}" type="image/x-icon">
-	<!-- ===== Style CSS ===== -->
-
-	<!-- ===== Style CSS ===== -->
-	<link rel="stylesheet" type="text/css" href="{{ URL::asset('public/assets/css/style.css') }}">
-	<!-- ===== Responsive CSS ===== -->
-	<link rel="stylesheet" type="text/css" href="{{ URL::asset('public/assets/css/responsive.css') }}">
+	
   	<!-- HTML5 Shim and Respond.js" IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js" doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
@@ -66,7 +61,12 @@
 	</a><!-- return to top -->
 
 		
+	<!-- ===== Style CSS ===== -->
 
+	<!-- ===== Style CSS ===== -->
+	<link rel="stylesheet" type="text/css" href="{{ URL::asset('public/assets/css/style.css') }}">
+	<!-- ===== Responsive CSS ===== -->
+	<link rel="stylesheet" type="text/css" href="{{ URL::asset('public/assets/css/responsive.css') }}">	
 	<!-- ===== JS ===== -->
 	<script src="{{ URL::asset('public/assets/js/jquery.min.js') }}"></script>
 	<script src="{{ URL::asset('public/assets/js/moment.js') }}"></script>
