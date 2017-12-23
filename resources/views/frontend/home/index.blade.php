@@ -26,7 +26,7 @@
 									<ul class="list-inline">
 										<li>
 											<p>
-												<span class="image"><img src="{{ URL::asset('public/assets/images/icon/metal-detector-gate.png') }}" alt=""></span>
+												<span class="image"><img src="{{ URL::asset('public/assets/images/icon/metal-detector-gate.png') }}" alt="Airport"></span>
 												<strong>{!! __('text.airport') !!}</strong>
 												&nbsp;&nbsp;&nbsp;
 												<span class="icon">
@@ -34,7 +34,7 @@
 														<i class="fa fa-angle-double-right"></i>
 														<i class="fa fa-angle-double-right"></i>
 													</span>
-												<a href="#" title="" class="view-detal" data-toggle="modal" data-target="#arrival-airport">
+												<a href="javascript:;" title="{!! __('text.view_detail') !!}" class="view-detal" data-toggle="modal" data-target="#arrival-airport">
 													&nbsp;&nbsp;
 													<span class="text">{!! __('text.view_detail') !!}</span>
 												</a>
@@ -42,7 +42,7 @@
 										</li>
 										<li>
 											<p>
-												<span class="image"><img src="{{ URL::asset('public/assets/images/icon/taxi.png') }}" alt=""></span>
+												<span class="image"><img src="{{ URL::asset('public/assets/images/icon/taxi.png') }}" alt="Taxi"></span>
 												<strong>{!! __('text.at_taxi_stand') !!}</strong>
 												&nbsp;&nbsp;&nbsp;
 												<span class="icon">
@@ -50,7 +50,7 @@
 													<i class="fa fa-angle-double-right"></i>
 													<i class="fa fa-angle-double-right"></i>
 												</span>
-												<a href="#" title="" class="view-detal" data-toggle="modal" data-target="#at-taxi-stand">
+												<a href="javascript:;" title="{!! __('text.view_detail') !!}" class="view-detal" data-toggle="modal" data-target="#at-taxi-stand">
 													&nbsp;&nbsp;
 													<span class="text">{!! __('text.view_detail') !!}</span>
 												</a>
@@ -90,14 +90,14 @@
 											<span class="per">/ {!! __('text.per_night') !!}</span>
 											<br>
 											@if($locale == "en")
-											<strong style="color:red;font-style:italic"><i class="fa fa-star"></i>Grand opening 10% discount</strong>
+											<strong class="m-discount" ><i class="fa fa-star"></i>Grand opening 10% discount</strong>
 											@elseif($locale == 'jp')
-											<strong style="color:red;font-style:italic"><i class="fa fa-star"></i>グランドオープン10％割引</strong>
+											<strong class="m-discount" ><i class="fa fa-star"></i>グランドオープン10％割引</strong>
 											@else
-											<strong style="color:red;font-style:italic"><i class="fa fa-star"></i>Mừng khai trương giảm 10%</strong>
+											<strong class="m-discount"><i class="fa fa-star"></i>Mừng khai trương giảm 10%</strong>
 											@endif
 										</div>
-										<a target="_blank" href="https://ezhotel.vn/BookingSite/behotel?id=1001&locale={{ ($locale == "jp" || $locale == "en") ? "en_EN" : "vi_VN" }}" title="Book Now" class="btn btn-booknow btn-1e">{!! __('text.book_now') !!}</a>
+										<a target="_blank" href="https://ezhotel.vn/BookingSite/behotel?id=1001&locale={{ ($locale == "jp" || $locale == "en") ? "en_EN" : "vi_VN" }}" title="Book Now" title="{!! __('text.book_now') !!}" class="btn btn-booknow btn-1e">{!! __('text.book_now') !!}</a>
 									</div><!-- /description -->
 								</div>
 							</div><!-- /item-->
@@ -115,14 +115,14 @@
 											<span class="per">/ {!! __('text.per_night') !!}</span>
 											<br>
 											@if($locale == "en")
-											<strong style="color:red;font-style:italic"><i class="fa fa-star"></i>Grand opening 10% discount</strong>
+											<strong ><i class="fa fa-star"></i>Grand opening 10% discount</strong>
 											@elseif($locale == 'jp')
-											<strong style="color:red;font-style:italic"><i class="fa fa-star"></i>グランドオープン10％割引</strong>
+											<strong ><i class="fa fa-star"></i>グランドオープン10％割引</strong>
 											@else
-											<strong style="color:red;font-style:italic"><i class="fa fa-star"></i>Mừng khai trương giảm 10%</strong>
+											<strong ><i class="fa fa-star"></i>Mừng khai trương giảm 10%</strong>
 											@endif
 										</div>											
-										<a target="_blank" href="https://ezhotel.vn/BookingSite/behotel?id=1001&locale={{ ($locale == "jp" || $locale == "en") ? "en_EN" : "vi_VN" }}" title="Out Of Room" class="btn btn-booknow btn-le">{!! __('text.book_now') !!}</a>
+										<a target="_blank" href="https://ezhotel.vn/BookingSite/behotel?id=1001&locale={{ ($locale == "jp" || $locale == "en") ? "en_EN" : "vi_VN" }}" title="Out Of Room" title="{!! __('text.book_now') !!}" class="btn btn-booknow btn-le">{!! __('text.book_now') !!}</a>
 									</div><!-- /description -->
 								</div>
 							</div>
@@ -140,11 +140,11 @@
 											<span class="per">/ {!! __('text.per_night') !!}</span>
 											<br>
 											@if($locale == "en")
-											<strong style="color:red;font-style:italic"><i class="fa fa-star"></i>Grand opening 10% discount</strong>
+											<strong ><i class="fa fa-star"></i>Grand opening 10% discount</strong>
 											@elseif($locale == 'jp')
-											<strong style="color:red;font-style:italic"><i class="fa fa-star"></i>グランドオープン10％割引</strong>
+											<strong ><i class="fa fa-star"></i>グランドオープン10％割引</strong>
 											@else
-											<strong style="color:red;font-style:italic"><i class="fa fa-star"></i>Mừng khai trương giảm 10%</strong>
+											<strong ><i class="fa fa-star"></i>Mừng khai trương giảm 10%</strong>
 											@endif
 										</div>
 										<a target="_blank" href="https://ezhotel.vn/BookingSite/behotel?id=1001&locale={{ ($locale == "jp" || $locale == "en") ? "en_EN" : "vi_VN" }}" title="Book Now" class="btn btn-booknow btn-1e">{!! __('text.book_now') !!}</a>
@@ -165,11 +165,11 @@
 											<span class="per">/ {!! __('text.per_night') !!}</span>
 											<br>
 											@if($locale == "en")
-											<strong style="color:red;font-style:italic"><i class="fa fa-star"></i>Grand opening 10% discount</strong>
+											<strong ><i class="fa fa-star"></i>Grand opening 10% discount</strong>
 											@elseif($locale == 'jp')
-											<strong style="color:red;font-style:italic"><i class="fa fa-star"></i>グランドオープン10％割引</strong>
+											<strong ><i class="fa fa-star"></i>グランドオープン10％割引</strong>
 											@else
-											<strong style="color:red;font-style:italic"><i class="fa fa-star"></i>Mừng khai trương giảm 10%</strong>
+											<strong ><i class="fa fa-star"></i>Mừng khai trương giảm 10%</strong>
 											@endif
 										</div>											
 										<a target="_blank" href="https://ezhotel.vn/BookingSite/behotel?id=1001&locale={{ ($locale == "jp" || $locale == "en") ? "en_EN" : "vi_VN" }}" title="Out Of Room" class="btn btn-booknow btn-1e">{!! __('text.book_now') !!}</a>
@@ -195,7 +195,7 @@
 									<span class="text">{!! __('text.cash_will_be') !!}</span>
 								</li>
 								<li>
-									<span class="text">{!! __('text.credit_cards_accepted') !!} <img src="{{ URL::asset('public/assets/images/visa_mastercard_jcblogo.jpg') }}" alt="Master Card" style="display: inline-block;">&nbsp;<img src="{{ URL::asset('public/assets/images/unionpay.jpg') }}" alt="UnionPay" style="display: inline-block;"></span>
+									<span class="text">{!! __('text.credit_cards_accepted') !!} <img src="{{ URL::asset('public/assets/images/visa_mastercard_jcblogo.jpg') }}" alt="Master Card"  class="unionpay">&nbsp;<img src="{{ URL::asset('public/assets/images/unionpay.jpg') }}" alt="UnionPay" class="unionpay"></span>
 								</li>
 							</ul>
 						</div>

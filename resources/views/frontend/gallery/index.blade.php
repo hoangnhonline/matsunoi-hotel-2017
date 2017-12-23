@@ -489,13 +489,13 @@
                             <ul>
                                 <li class="active">
                                     <a href="{!! route('home') !!}" title="MATSUNOI VIETNAM">
-                                        <span class="image"><img src="{{ URL::asset('public/assets/images/icon/cityscape.png') }}" alt=""></span>
+                                        <span class="image"><img src="{{ URL::asset('public/assets/images/icon/cityscape.png') }}" alt="HCMC branch"></span>
                                         <span class="text">HCMC</span>
                                     </a>
                                 </li>                               
                                 <li>
                                     <a href="http://matsunoi.com" target="_blank" title="MATSUNOI JAPAN">
-                                        <span class="image"><img src="{{ URL::asset('public/assets/images/icon/tokyo-tower.png') }}" alt=""></span>
+                                        <span class="image"><img src="{{ URL::asset('public/assets/images/icon/tokyo-tower.png') }}" alt="JAPAN branch"></span>
                                         <span class="text">JAPAN</span>
                                     </a>
                                 </li>

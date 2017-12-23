@@ -1330,3 +1330,9 @@ footer {
   font-weight: normal;
   font-size: 13.5px;
 }
+strong.m-discount{
+  color:red;font-style:italic
+}
+img.unionpay{
+  display: inline-block
+}
