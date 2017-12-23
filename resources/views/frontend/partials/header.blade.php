@@ -13,7 +13,7 @@
 					<div class="language">
 						<ul>
 							<li><a href="{!! route('home') !!}" title="Japanese"><img src="{{ URL::asset('public/assets/images/japan.png') }}" alt="Japanese"></a></li>
-							<li><a href="{!! route('home', [ 'locale' => 'en'] ) !!}" title="English"><img src="{{ URL::asset('public/assets/images/en-icon.gif') }}" alt="English"></a></li>
+							<li><a href="{!! route('home', [ 'locale' => 'en'] ) !!}" title="English"><img src="{{ URL::asset('public/assets/images/en.png') }}" alt="English"></a></li>
 							<li><a href="{!! route('home', [ 'locale' => 'vn'] ) !!}" title="Vietnamese"><img src="{{ URL::asset('public/assets/images/vietnam.png') }}" alt="Vietnamese"></a></li>
 						</ul>
 					</div>
